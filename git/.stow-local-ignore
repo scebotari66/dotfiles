@@ -1,0 +1,3 @@
+# The global stow ignore list ignores .gitignore. But the .gitignore
+# file is crucial for this package. This empty stow ignore file ensures
+# that .gitignore will be symlinked. 

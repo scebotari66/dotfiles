@@ -1,0 +1,60 @@
+#!/bin/bash
+
+######################################################################################
+# General UI/UX                                                                      #
+######################################################################################
+
+# Disable the sound efect on boot
+sudo nvram SystemAudioVolume=" "
+
+######################################################################################
+# Trackpad, mouse, keyboard, and input                                               #
+######################################################################################
+
+# Disable auto-correct
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Turn off keyboard illumination when computer is not used for 5 minutes
+defaults write com.apple.BezelServices kDimTime -int 300
+
+######################################################################################
+# Finder                                                                             #
+######################################################################################
+
+# Show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Set Desktop as the default location for new Finder windows
+# For other paths, use "PfLo" and "file:///full/path/here/"
+defaults write com.apple.finder NewWindowTarget -string "PfDe"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
+
+# Show status bar
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# Show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+
+# Display full POSIX path as Finder window title
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+# Keep folders on top when sorting by name
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+
+# Disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Avoid creating .DS_Store files on network or USB volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+# Automatically open a new Finder window when a volume is mounted
+defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
+defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
+defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
+
+# Show the /Volumes folder
+sudo chflags nohidden /Volumes
+
+# Key repeat command when holding it in Sublime Text
+defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false

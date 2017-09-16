@@ -1,0 +1,46 @@
+[user]
+	name = Sergiu Cebotari
+	email = cebotariserghei@gmail.com
+[merge]
+	#Refuse to merge and exit with a non-zero status unless the current HEAD is already
+	#up-to-date or the merge can be resolved as a fast-forward
+ 	ff   = only
+[push]
+	#Push the current branch back to the branch whose changes are usually integrated into the current branch
+	default = simple
+[alias]
+	co    = checkout
+	cm    = commit
+	df    = diff
+	ft    = fetch
+	st    = status
+	sh    = stash
+	br    = branch
+	rb    = rebase
+	rs    = reset
+	pl    = pull
+	ps    = push
+	type  = cat-file -t
+	stats = shortlog -sn --all --no-merges
+	hist  = log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short
+	ls    = log --pretty=format:"%C(yellow)%h%Cred%d\\ %C(white)%s%Cgreen\\ [%cn]" --decorate
+	today = log --pretty=format:"%Cgreen%cd\\ %C(yellow)%h\\ %Creset%s" --date=format:%T --since=00:00:00 --all --no-merges --author=cebotariserghei@gmail.com
+[color]
+	ui = true
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = red
+[core]
+	excludesfile = ~/.gitignore
+[diff]
+	tool = git-meld
