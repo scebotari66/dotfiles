@@ -4,4 +4,4 @@ This is a dotfiles repository. [Stow](https://www.gnu.org/software/stow/) is use
 ## Setup
     $ git clone https://github.com/scebotari66/dotfiles.git ~/dotfiles
     $ cd ~/dotfiles
-    $ stow *
+    $ for d in */; do stow "$d"; done
