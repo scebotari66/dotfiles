@@ -27,6 +27,11 @@ alias lat="ls -AGFoth"
 #Hide/show all desktop icons (useful when presenting)
 alias showdeskicons="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+#Simulate macOS's "pbcopy" and "pbpaste" commands on other platforms
+if [ ! $(uname -s) = "Darwin" ]; then
+    alias pbcopy='xclip -selection clipboard'
+    alias pbpaste='xclip -selection clipboard -o'
+fi
 
 #Add system specific aliases
 if [ -f ~/.bash_aliases_local ] ; then
