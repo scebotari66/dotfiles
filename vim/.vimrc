@@ -11,3 +11,6 @@ autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 " close vim if the only opened window in NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+"==Plugin Vim colorschemes related=="
+colorscheme molokai
