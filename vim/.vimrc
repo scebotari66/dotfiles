@@ -3,6 +3,10 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+"==Key Mappings
+map <C-n> :NERDTreeToggle<CR>
+
+
 "==Plugin NERDTree related=="
 let NERDTreeShowHidden=1
 " open on start up
