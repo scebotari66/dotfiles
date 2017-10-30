@@ -1,6 +1,7 @@
 execute pathogen#infect()
 
 syntax on
+set t_Co=256
 set expandtab
 set smartindent
 set tabstop=4
@@ -22,3 +23,4 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 "==Plugin Vim colorschemes related=="
 colorscheme OceanicNext
+set background=dark
