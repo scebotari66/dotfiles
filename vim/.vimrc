@@ -6,6 +6,8 @@ set expandtab
 set smartindent
 set tabstop=4
 set shiftwidth=4
+set number
+set relativenumber
 filetype plugin indent on
 
 "==Key Mappings
