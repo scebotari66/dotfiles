@@ -56,5 +56,6 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 # Show the /Volumes folder
 sudo chflags nohidden /Volumes
 
-# Key repeat command when holding it in Sublime Text
+# Key repeat command when holding it in Sublime Text and Visual Studio Code
 defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
