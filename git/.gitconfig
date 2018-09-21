@@ -1,10 +1,12 @@
 [user]
-	name = Serghei Cebotari
+	name  = Serghei Cebotari
 	email = cebotariserghei@gmail.com
+[fetch]
+	prune = true
 [merge]
 	#Refuse to merge and exit with a non-zero status unless the current HEAD is already
 	#up-to-date or the merge can be resolved as a fast-forward
- 	ff   = only
+	ff    = only
 [push]
 	#Push the current branch back to the branch whose changes are usually integrated into the current branch
 	default = simple
