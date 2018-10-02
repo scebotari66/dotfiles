@@ -12,10 +12,13 @@
 	default = simple
 [alias]
 	co    = checkout
+	cob   = checkout -b
 	cm    = commit
 	df    = diff
+	dw    = diff --word-diff
 	ft    = fetch
 	st    = status
+	sts   = status -s
 	sh    = stash
 	br    = branch
 	rb    = rebase
