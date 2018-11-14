@@ -24,5 +24,5 @@ autocmd VimEnter * wincmd p
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 "==Plugin Vim colorschemes related=="
-colorscheme OceanicNext
+colorscheme Molokai
 set background=dark
