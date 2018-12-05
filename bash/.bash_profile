@@ -28,3 +28,6 @@ fi
 if [ -f ~/.bash_profile_local ] ; then
     . ~/.bash_profile_local
 fi
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
