@@ -10,6 +10,7 @@ alias -- -="cd -"
 #SHORTCUTS
 alias g="git"
 alias d="docker"
+alias v="vim"
 alias dc="docker-compose"
 alias sa="sencha"
 alias yt="youtube-dl"
