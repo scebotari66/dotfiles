@@ -7,3 +7,6 @@
 [submodule "vim/.vim/bundle/vim-colorschemes"]
 	path = vim/.vim/bundle/vim-colorschemes
 	url = git@github.com:flazz/vim-colorschemes.git
+[submodule "vim/.vim/bundle/editorconfig"]
+	path = vim/.vim/bundle/editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim.git
