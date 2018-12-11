@@ -20,6 +20,7 @@ map <C-n> :NERDTreeToggle<CR>
 "==Plugin NERDTree related=="
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
+let NERDTreeMouseMode=2
 " open on start up
 autocmd VimEnter * NERDTree
 " set cursor positon from NERDTree to file on vim open
