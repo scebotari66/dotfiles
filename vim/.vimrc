@@ -16,6 +16,11 @@ filetype plugin indent on
 "==Key Mappings
 map <C-n> :NERDTreeToggle<CR>
 
+"==Plugin `vim-airline` related=="
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 "==Plugin NERDTree related=="
 let NERDTreeShowHidden=1
