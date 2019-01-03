@@ -15,10 +15,6 @@ do
     . $file
   fi
 done
-#Enable tab completion for "g" by marking it as an alias for "git"
-if type __git_complete &> /dev/null; then
-  __git_complete g __git_main
-fi;
 
 #Add bash aliases
 if [ -f ~/.bash_aliases ]; then
@@ -29,5 +25,9 @@ if [ -f ~/.bash_profile_local ] ; then
     . ~/.bash_profile_local
 fi
 
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+#Enable tab completion for "g" by marking it as an alias for "git"
+if type __git_complete &> /dev/null; then
+  __git_complete g __git_main
+fi;
 
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
