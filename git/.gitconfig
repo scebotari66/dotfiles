@@ -20,6 +20,10 @@
 	st    = status
 	sts   = status -s
 	sh    = stash
+	sha   = !git add -A && git stash
+	shd   = stash drop
+	shl   = stash list
+	shp   = stash pop
 	br    = branch
 	rb    = rebase
 	rs    = reset
