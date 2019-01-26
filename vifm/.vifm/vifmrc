@@ -1,0 +1,9 @@
+" ignore case in search pattern unless it contains at least one uppercase letter
+set ignorecase
+set smartcase
+
+" allow moving files to trash without confirmation
+set confirm-=delete
+
+" change colorscheme
+colorscheme darkdesert
