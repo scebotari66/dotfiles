@@ -1,3 +1,4 @@
+set tab-size = 4
 set refresh-mode = periodic
 set refresh-interval = 5
 bind status A @git add -A
