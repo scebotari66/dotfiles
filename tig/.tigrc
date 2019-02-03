@@ -1,4 +1,6 @@
 set tab-size = 4
 set refresh-mode = periodic
 set refresh-interval = 5
+bind main C @git checkout %(commit)
+bind main Y @sh -c "echo %(commit) | pbcopy"
 bind status A @git add -A
