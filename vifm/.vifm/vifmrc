@@ -7,3 +7,5 @@ set confirm-=delete
 
 " change colorscheme
 colorscheme darkdesert
+
+set dotfiles
