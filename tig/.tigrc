@@ -1,4 +1,5 @@
 set tab-size = 4
+set ignore-case = smart-case
 set refresh-mode = periodic
 set refresh-interval = 5
 bind main C @git checkout %(commit)
