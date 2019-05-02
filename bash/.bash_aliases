@@ -8,10 +8,11 @@ alias ~="cd ~"
 alias -- -="cd -"
 
 #SHORTCUTS
-alias g="git"
 alias d="docker"
 alias f="vifm"
+alias g="git"
 alias o="open"
+alias t="tmux"
 alias v="vim"
 alias dc="docker-compose"
 alias sa="sencha"
