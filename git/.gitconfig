@@ -11,6 +11,7 @@
 	#Push the current branch back to the branch whose changes are usually integrated into the current branch
 	default = simple
 [alias]
+	aa    = add --all
 	co    = checkout
 	cob   = checkout -b
 	cm    = commit
