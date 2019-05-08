@@ -15,6 +15,7 @@
 	cob   = checkout -b
 	cm    = commit
 	df    = diff
+	ds    = diff --staged
 	dw    = diff --word-diff
 	ft    = fetch
 	st    = status
