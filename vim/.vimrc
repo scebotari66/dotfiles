@@ -11,6 +11,7 @@ set tabstop=4
 set shiftwidth=4
 set number
 set relativenumber
+set colorcolumn=100
 filetype plugin indent on
 
 let mapleader=" "
