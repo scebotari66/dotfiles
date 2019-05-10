@@ -13,6 +13,8 @@ set number
 set relativenumber
 filetype plugin indent on
 
+let mapleader=" "
+
 "==Key Mappings
 map <C-n> :NERDTreeToggle<CR>
 
