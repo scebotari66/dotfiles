@@ -3,13 +3,14 @@ execute pathogen#infect()
 syntax on
 set t_Co=256
 set mouse=a
+set number
+set hidden
 set nobackup
 set noswapfile
 set expandtab
 set smartindent
 set tabstop=4
 set shiftwidth=4
-set number
 set relativenumber
 set colorcolumn=100
 filetype plugin indent on
