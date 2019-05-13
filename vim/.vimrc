@@ -19,6 +19,7 @@ let mapleader=" "
 
 "==Key Mappings
 map <C-n> :NERDTreeToggle<CR>
+nnoremap <leader><leader> <c-^>
 
 "==Plugin `vim-airline` related=="
 " Enable the list of buffers
