@@ -19,6 +19,7 @@
 	ds    = diff --staged
 	dw    = diff --word-diff
 	ft    = fetch
+	fta   = fetch --all
 	st    = status
 	sts   = status -s
 	sh    = stash
