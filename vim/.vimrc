@@ -13,6 +13,10 @@ set tabstop=4
 set shiftwidth=4
 set relativenumber
 set colorcolumn=100
+set showmatch
+set incsearch
+set hlsearch
+set ignorecase smartcase
 filetype plugin indent on
 
 let mapleader=" "
@@ -20,6 +24,7 @@ let mapleader=" "
 "==Key Mappings
 map <C-n> :NERDTreeToggle<CR>
 nnoremap <leader><leader> <c-^>
+nnoremap <silent> <leader>c :noh<CR><CR>
 
 "==Plugin `vim-airline` related=="
 " Enable the list of buffers
