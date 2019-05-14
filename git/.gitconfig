@@ -32,6 +32,7 @@
 	rs    = reset
 	pl    = pull
 	ps    = push
+	psf   = push -f
 	mg    = merge
 	type  = cat-file -t
 	stats = shortlog -sn --all --no-merges
