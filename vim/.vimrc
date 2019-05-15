@@ -40,4 +40,4 @@ let NERDTreeMouseMode=2
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 "==Plugin Vim colorschemes related=="
-colorscheme mustang
+colorscheme neodark
