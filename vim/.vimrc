@@ -22,9 +22,10 @@ filetype plugin indent on
 let mapleader=" "
 
 "==Key Mappings
-map <C-n> :NERDTreeToggle<CR>
 nnoremap <leader><leader> <c-^>
 nnoremap <silent> <leader>c :noh<CR><CR>
+map <C-b> :NERDTreeToggle<CR>
+map <leader>br :NERDTreeFind<CR>
 
 "==Plugin `vim-airline` related=="
 " Enable the list of buffers
