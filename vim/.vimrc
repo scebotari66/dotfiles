@@ -24,6 +24,11 @@ let mapleader=" "
 "==Key Mappings
 nnoremap <leader><leader> <c-^>
 nnoremap <silent> <leader>c :noh<CR><CR>
+" Move around splits with <c-hjkl>
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 map <C-b> :NERDTreeToggle<CR>
 map <leader>br :NERDTreeFind<CR>
 
