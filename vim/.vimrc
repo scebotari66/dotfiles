@@ -38,6 +38,13 @@ let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
 
+"==Plugin `ctrp` related=="
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_custom_ignore = '\.git$\|build$\|node_modules$\|ext'
+" ignore files from .gitignore
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
 "==Plugin NERDTree related=="
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
