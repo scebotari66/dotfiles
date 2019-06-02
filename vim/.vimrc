@@ -29,6 +29,11 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+" Move vertically faster with counts
+noremap <c-j> 6j
+vnoremap <c-j> 6j
+noremap <c-k> 6k
+vnoremap <c-k> 6k
 map <C-b> :NERDTreeToggle<CR>
 map <leader>br :NERDTreeFind<CR>
 
