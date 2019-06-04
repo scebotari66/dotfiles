@@ -31,12 +31,12 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 " Move vertically faster with counts
-noremap <c-j> 6j
-vnoremap <c-j> 6j
-noremap <c-k> 6k
-vnoremap <c-k> 6k
-map <C-b> :NERDTreeToggle<CR>
-map <leader>br :NERDTreeFind<CR>
+noremap <c-j> 5j
+vnoremap <c-j> 5j
+noremap <c-k> 5k
+vnoremap <c-k> 5k
+map <C-b> :NERDTreeToggle<cr>
+map <leader>br :NERDTreeFind<cr>
 
 "==Plugin `vim-airline` related=="
 " Enable the list of buffers
