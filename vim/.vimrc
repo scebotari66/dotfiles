@@ -25,6 +25,8 @@ let mapleader=" "
 "==Key Mappings
 nnoremap <leader><leader> <c-^>
 nnoremap <silent> <leader>c :noh<CR><CR>
+nnoremap <leader>j :cnext<cr>
+nnoremap <leader>k :cprev<cr>
 " Move around splits with <c-hjkl>
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
