@@ -16,6 +16,7 @@ set colorcolumn=100
 set showmatch
 set incsearch
 set hlsearch
+set lazyredraw
 set ignorecase smartcase
 filetype plugin indent on
 
