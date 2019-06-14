@@ -27,16 +27,17 @@ nnoremap <leader><leader> <c-^>
 nnoremap <silent> <esc><esc> :noh<cr>
 nnoremap <leader>j :cnext<cr>
 nnoremap <leader>k :cprev<cr>
+map <leader>J :join<cr>
 " Move around splits with <c-hjkl>
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 " Move vertically faster with counts
-noremap <c-j> 5j
-vnoremap <c-j> 5j
-noremap <c-k> 5k
-vnoremap <c-k> 5k
+noremap J 5j
+vnoremap J 5j
+noremap K 5k
+vnoremap K 5k
 map <C-b> :NERDTreeToggle<cr>
 map <leader>br :NERDTreeFind<cr>
 
