@@ -52,7 +52,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = '\.git$\|build$\|node_modules$\|ext'
-let g:ctrlp_lazy_update = 400
+let g:ctrlp_lazy_update = 200
 " ignore files from .gitignore
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
