@@ -38,8 +38,9 @@ noremap J 5j
 vnoremap J 5j
 noremap K 5k
 vnoremap K 5k
-map <C-b> :NERDTreeToggle<cr>
-map <leader>br :NERDTreeFind<cr>
+" Move faster in buffer list
+map gb :bnext<CR>
+map gB :bprev<CR>
 
 "==Plugin `vim-airline` related=="
 " Enable the list of buffers
@@ -61,6 +62,8 @@ let NERDTreeMinimalUI=1
 let NERDTreeMouseMode=2
 " close vim if the only opened window in NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+map <C-b> :NERDTreeToggle<cr>
+map <leader>br :NERDTreeFind<cr>
 
 "==Plugin Vim colorschemes related=="
 colorscheme neodark
