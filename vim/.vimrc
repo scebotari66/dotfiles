@@ -22,7 +22,8 @@ filetype plugin indent on
 
 let mapleader=" "
 
-"==Key Mappings
+"== KEY MAPPINGS ==
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader><leader> <c-^>
 nnoremap <silent> <esc><esc> :noh<cr>
 nnoremap <leader>j :cnext<cr>
@@ -42,12 +43,13 @@ vnoremap K 5k
 map gb :bnext<CR>
 map gB :bprev<CR>
 
+"== PLUGINS ==
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "==Plugin `vim-airline` related=="
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
-
 "==Plugin `ctrp` related=="
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_working_path_mode = 'ra'
@@ -55,7 +57,6 @@ let g:ctrlp_custom_ignore = '\.git$\|build$\|node_modules$\|ext'
 let g:ctrlp_lazy_update = 200
 " ignore files from .gitignore
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-
 "==Plugin NERDTree related=="
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
@@ -64,6 +65,18 @@ let NERDTreeMouseMode=2
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map <C-b> :NERDTreeToggle<cr>
 map <leader>br :NERDTreeFind<cr>
-
 "==Plugin Vim colorschemes related=="
 colorscheme neodark
+
+"== FUNCTIONS ==
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! RenameFile()
+    let old_name = expand('%')
+    let new_name = input('New file name: ', expand('%'), 'file')
+    if new_name != '' && new_name != old_name
+        exec ':saveas ' . new_name
+        exec ':silent !rm ' . old_name
+        redraw!
+    endif
+endfunction
+map <leader>n :call RenameFile()<cr>
