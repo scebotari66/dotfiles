@@ -9,3 +9,9 @@ set confirm-=delete
 colorscheme darkdesert
 
 set dotfiles
+
+" mappings
+noremap J 5j
+vnoremap J 5j
+noremap K 5k
+vnoremap K 5k
