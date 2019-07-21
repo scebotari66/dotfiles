@@ -42,6 +42,8 @@ vnoremap K 5k
 " Move faster in buffer list
 map gb :bnext<CR>
 map gB :bprev<CR>
+" Switch to previous buffer then delete the current one
+nnoremap <leader>q :bp<cr>:bd #<cr> 
 
 "== PLUGINS ==
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
