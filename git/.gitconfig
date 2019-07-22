@@ -29,6 +29,9 @@
 	shp   = stash pop
 	br    = branch
 	rb    = rebase
+	rbi   = rebase --interactive
+	rba   = rebase --abort
+	rbc   = rebase --continue
 	rs    = reset
 	pl    = pull
 	ps    = push
