@@ -34,6 +34,7 @@
 	rbc   = rebase --continue
 	rs    = reset
 	pl    = pull
+	plr   = pull --rebase
 	ps    = push
 	psf   = push -f
 	mg    = merge
