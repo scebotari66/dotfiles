@@ -17,6 +17,7 @@ set showmatch
 set incsearch
 set hlsearch
 set lazyredraw
+set showcmd
 set ignorecase smartcase
 filetype plugin indent on
 
