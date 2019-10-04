@@ -45,6 +45,12 @@ map gb :bnext<CR>
 map gB :bprev<CR>
 " Switch to previous buffer then delete the current one
 nnoremap <leader>q :bp<cr>:bd #<cr> 
+" Tolerate first uppercase letter in common commands
+command W write
+command Wa wa
+command Wq wq
+command Wqa wqa
+command Q quit
 
 "== PLUGINS ==
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
