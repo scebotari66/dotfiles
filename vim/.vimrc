@@ -1,4 +1,37 @@
-execute pathogen#infect()
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive', { 'tag': 'v3.1' }
+Plug 'tpope/vim-surround'
+Plug 'flazz/vim-colorschemes'
+Plug 'dense-analysis/ale', { 'tag': 'v2.6.0' }
+Plug 'jiangmiao/auto-pairs', { 'tag': 'v2.0.0' }
+Plug 'terryma/vim-multiple-cursors'
+Plug 'ctrlpvim/ctrlp.vim', { 'tag': '1.80' }
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_custom_ignore = '\.git$\|build$\|node_modules$\|ext'
+let g:ctrlp_lazy_update = 100
+" ignore files from .gitignore
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+Plug 'editorconfig/editorconfig-vim', { 'tag': 'v1.0.0-beta' }
+Plug 'mattn/emmet-vim'
+Plug 'scrooloose/nerdtree', { 'tag': '6.2.0', 'on': 'NERDTreeToggle' }
+let NERDTreeShowHidden=1
+let NERDTreeMinimalUI=1
+let NERDTreeMouseMode=2
+" close vim if the only opened window in NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+Plug 'Xuyuanp/nerdtree-git-plugin', { 'on':  'NERDTreeToggle'  }
+Plug 'vim-airline/vim-airline', { 'tag': 'v0.10' }
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'airblade/vim-gitgutter'
+Plug 'pangloss/vim-javascript'
+Plug 'posva/vim-vue'
+call plug#end()
 
 syntax on
 set t_Co=256
@@ -21,6 +54,7 @@ set showcmd
 set ignorecase smartcase
 filetype plugin indent on
 
+colorscheme neodark
 let mapleader=" "
 
 "== KEY MAPPINGS ==
@@ -51,31 +85,8 @@ command Wa wa
 command Wq wq
 command Wqa wqa
 command Q quit
-
-"== PLUGINS ==
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"==Plugin `vim-airline` related=="
-" Enable the list of buffers
-let g:airline#extensions#tabline#enabled = 1
-" Show just the filename
-let g:airline#extensions#tabline#fnamemod = ':t'
-"==Plugin `ctrp` related=="
-let g:ctrlp_show_hidden = 1
-let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_custom_ignore = '\.git$\|build$\|node_modules$\|ext'
-let g:ctrlp_lazy_update = 100
-" ignore files from .gitignore
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-"==Plugin NERDTree related=="
-let NERDTreeShowHidden=1
-let NERDTreeMinimalUI=1
-let NERDTreeMouseMode=2
-" close vim if the only opened window in NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map <C-b> :NERDTreeToggle<cr>
 map <leader>br :NERDTreeFind<cr>
-"==Plugin Vim colorschemes related=="
-colorscheme neodark
 
 "== FUNCTIONS ==
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
