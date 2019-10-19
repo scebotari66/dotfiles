@@ -31,6 +31,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'pangloss/vim-javascript'
 Plug 'posva/vim-vue'
+Plug 'wellle/targets.vim', { 'tag': 'v0.5.0' }
 call plug#end()
 
 syntax on
