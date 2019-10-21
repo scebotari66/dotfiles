@@ -15,7 +15,7 @@ let g:ctrlp_lazy_update = 100
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 Plug 'editorconfig/editorconfig-vim', { 'tag': 'v1.0.0-beta' }
 Plug 'mattn/emmet-vim'
-Plug 'scrooloose/nerdtree', { 'tag': '6.2.0', 'on': 'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree', { 'tag': '6.2.0', 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
 let NERDTreeMouseMode=2
