@@ -53,6 +53,7 @@ set hlsearch
 set lazyredraw
 set showcmd
 set ignorecase smartcase
+set autoread
 filetype plugin indent on
 
 colorscheme neodark
