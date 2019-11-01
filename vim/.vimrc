@@ -35,9 +35,8 @@ Plug 'wellle/targets.vim', { 'tag': 'v0.5.0' }
 call plug#end()
 
 syntax on
-set mouse=a
 set t_Co=256
-set term=xterm-256color
+set mouse=a
 set number
 set hidden
 set nobackup
