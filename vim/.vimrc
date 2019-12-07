@@ -32,6 +32,11 @@ Plug 'airblade/vim-gitgutter'
 Plug 'pangloss/vim-javascript'
 Plug 'posva/vim-vue'
 Plug 'wellle/targets.vim', { 'tag': 'v0.5.0' }
+Plug 'SirVer/ultisnips', { 'tag': '3.2' }
+    let g:UltiSnipsSnippetDirectories = ['ultisnippets']
+    let g:UltiSnipsExpandTrigger='<tab>'
+    let g:UltiSnipsJumpForwardTrigger='<tab>'
+    let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 call plug#end()
 
 syntax on
