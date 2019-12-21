@@ -87,11 +87,11 @@ map gB :bprev<CR>
 " Switch to previous buffer then delete the current one
 nnoremap <leader>q :bp<cr>:bd #<cr> 
 " Tolerate first uppercase letter in common commands
-command W write
-command Wa wa
-command Wq wq
-command Wqa wqa
-command Q quit
+command! W write
+command! Wa wa
+command! Wq wq
+command! Wqa wqa
+command! Q quit
 map <C-b> :NERDTreeToggle<cr>
 map <leader>br :NERDTreeFind<cr>
 
