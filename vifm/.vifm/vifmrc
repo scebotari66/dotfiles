@@ -15,3 +15,11 @@ noremap J 5j
 vnoremap J 5j
 noremap K 5k
 vnoremap K 5k
+
+" marks
+mark h ~/
+mark c ~/Code
+mark d ~/Desktop
+mark l ~/Downloads
+mark m ~/Documents
+mark x ~/dotfiles
