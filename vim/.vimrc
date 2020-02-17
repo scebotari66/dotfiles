@@ -1,6 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-fugitive', { 'tag': 'v3.1' }
+Plug 'tpope/vim-fugitive', { 'tag': 'v3.2' }
 Plug 'tpope/vim-surround'
 Plug 'flazz/vim-colorschemes'
 Plug 'dense-analysis/ale', { 'tag': 'v2.6.0' }
@@ -15,7 +15,7 @@ Plug 'ctrlpvim/ctrlp.vim', { 'tag': '1.80' }
     let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 Plug 'editorconfig/editorconfig-vim', { 'tag': 'v1.0.0-beta' }
 Plug 'mattn/emmet-vim'
-Plug 'scrooloose/nerdtree', { 'tag': '6.2.0', 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
+Plug 'scrooloose/nerdtree', { 'tag': '6.6.0', 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
     let NERDTreeShowHidden=1
     let NERDTreeMinimalUI=1
     let NERDTreeMouseMode=2
