@@ -39,6 +39,12 @@
 	ps    = push
 	psf   = push -f
 	mg    = merge
+	rt    = remote
+	rtv   = remote -v
+	rta   = remote add
+	rtr   = remote remove
+	rtd   = remote remove
+	rtm   = remote rename
 	type  = cat-file -t
 	stats = shortlog -sn --all --no-merges
 	hist  = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
