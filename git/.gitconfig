@@ -16,6 +16,8 @@
 	co    = checkout
 	cob   = checkout -b
 	cm    = commit
+	cma   = commit --all
+	cmm   = commit --amend
 	df    = diff
 	ds    = diff --staged
 	dw    = diff --word-diff
@@ -34,10 +36,12 @@
 	rba   = rebase --abort
 	rbc   = rebase --continue
 	rs    = reset
+	rsh   = reset --hard
 	pl    = pull
 	plr   = pull --rebase
 	ps    = push
 	psf   = push -f
+	psu   = push -u
 	mg    = merge
 	rt    = remote
 	rtv   = remote -v
