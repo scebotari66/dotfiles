@@ -19,6 +19,7 @@ Plug 'scrooloose/nerdtree', { 'tag': '6.6.0', 'on': ['NERDTreeToggle', 'NERDTree
     let NERDTreeShowHidden=1
     let NERDTreeMinimalUI=1
     let NERDTreeMouseMode=2
+    let NERDTreeIgnore=['\.DS_Store$']
     " close vim if the only opened window in NERDTree
     autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on':  'NERDTreeToggle'  }
