@@ -89,6 +89,8 @@ map gb :bnext<CR>
 map gB :bprev<CR>
 " Switch to previous buffer then delete the current one
 nnoremap <leader>q :bp<cr>:bd #<cr> 
+" Close all buffers except the current one
+nnoremap <leader>bd :%bd<cr>:e#<cr>:bd#<cr>
 " Tolerate first uppercase letter in common commands
 command! W write
 command! Wa wa
