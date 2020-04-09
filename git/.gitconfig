@@ -1,6 +1,8 @@
 [user]
 	name  = Serghei Cebotari
 	email = cebotariserghei@gmail.com
+[include]
+	path = ~/.gitconfig_local
 [fetch]
 	prune = true
 [merge]
