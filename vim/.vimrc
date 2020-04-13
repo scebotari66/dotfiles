@@ -5,6 +5,9 @@ Plug 'tpope/vim-surround'
 Plug 'flazz/vim-colorschemes'
 Plug 'dense-analysis/ale', { 'tag': 'v2.6.0' }
 Plug 'jiangmiao/auto-pairs', { 'tag': 'v2.0.0' }
+    let g:AutoPairsShortcutJump=''
+    let g:AutoPairsMoveCharacter=''
+    let g:AutoPairsShortcutBackInsert=''
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ctrlpvim/ctrlp.vim', { 'tag': '1.80' }
     let g:ctrlp_show_hidden = 1
