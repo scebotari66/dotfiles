@@ -1,3 +1,25 @@
+syntax on
+let mapleader=" "
+
+set t_Co=256
+set mouse=a
+set number
+set hidden
+set nobackup
+set noswapfile
+set expandtab
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set colorcolumn=100
+set showmatch
+set incsearch
+set hlsearch
+set lazyredraw
+set showcmd
+set ignorecase smartcase
+set autoread
+
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive', { 'tag': 'v3.2' }
@@ -41,33 +63,22 @@ Plug 'SirVer/ultisnips', { 'tag': '3.2' }
     let g:UltiSnipsExpandTrigger='<tab>'
     let g:UltiSnipsJumpForwardTrigger='<tab>'
     let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
+Plug 'wincent/ferret'
+    let g:FerretMap=0
+    nmap <leader>fa <Plug>(FerretAck)
+    nmap <leader>ff <Plug>(FerretAck)
+    nmap <leader>fl <Plug>(FerretLack)
+    nmap <leader>fb <Plug>(FerretBack)
+    nmap <leader>fw <Plug>(FerretAckWord)
+    nmap <leader>sa <Plug>(FerretAcks)
+    nmap <leader>ss <Plug>(FerretAcks)
+    nmap <leader>sl <Plug>(FerretLack)
+    nmap <leader>sb <Plug>(FerretBacks)
 call plug#end()
 
-syntax on
-set t_Co=256
-set mouse=a
-set number
-set hidden
-set nobackup
-set noswapfile
-set expandtab
-set smartindent
-set tabstop=4
-set shiftwidth=4
-set relativenumber
-set colorcolumn=100
-set showmatch
-set incsearch
-set hlsearch
-set lazyredraw
-set showcmd
-set ignorecase smartcase
-set autoread
-filetype plugin indent on
-
 colorscheme neodark
-let mapleader=" "
 
+filetype plugin indent on
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 "== KEY MAPPINGS ==
