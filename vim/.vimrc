@@ -26,11 +26,11 @@ Plug 'tpope/vim-fugitive', { 'tag': 'v3.2' }
 Plug 'tpope/vim-surround'
 Plug 'flazz/vim-colorschemes'
 Plug 'dense-analysis/ale', { 'tag': 'v2.6.0' }
+Plug 'mg979/vim-visual-multi', { 'tag': 'v.0.5.3' }
 Plug 'jiangmiao/auto-pairs', { 'tag': 'v2.0.0' }
     let g:AutoPairsShortcutJump=''
     let g:AutoPairsMoveCharacter=''
     let g:AutoPairsShortcutBackInsert=''
-Plug 'terryma/vim-multiple-cursors'
 Plug 'ctrlpvim/ctrlp.vim', { 'tag': '1.80' }
     let g:ctrlp_show_hidden = 1
     let g:ctrlp_working_path_mode = 'ra'
