@@ -33,6 +33,9 @@
 	shl   = stash list
 	shp   = stash pop
 	br    = branch
+	brl   = !git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 10 | awk -F' ~ HEAD@{' '{printf(\"  \\033[33m%s: \\033[37m %s\\033[0m\\n\", substr($2, 1, length($2)-1), $1)}'
+	brd   = branch -d
+	brD   = branch -D
 	rb    = rebase
 	rbi   = rebase --interactive
 	rba   = rebase --abort
@@ -56,7 +59,8 @@
 	hist  = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	ls    = log --pretty=format:"%C(yellow)%h%Cred%d\\ %C(white)%s%Cgreen\\ [%cn]" --decorate
 	today = log --pretty=format:"%Cgreen%cd\\ %C(yellow)%h\\ %Creset%s" --date=format:%T --since=00:00:00 --all --no-merges --author=cebotariserghei@gmail.com
-	wip   = !git add -A && git commit -m "WIP"
+	wip   = !git add -A && git commit -m "WIP"    
+	ww    = !git-open    
 [color]
 	ui = true
 [color "branch"]
