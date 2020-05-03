@@ -19,8 +19,10 @@ set lazyredraw
 set showcmd
 set ignorecase smartcase
 set autoread
+set termguicolors
 
 call plug#begin('~/.vim/plugged')
+Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive', { 'tag': 'v3.2' }
 Plug 'tpope/vim-surround'
@@ -76,7 +78,7 @@ Plug 'wincent/ferret'
     nmap <leader>sb <Plug>(FerretBacks)
 call plug#end()
 
-colorscheme neodark
+colorscheme nord
 
 filetype plugin indent on
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
