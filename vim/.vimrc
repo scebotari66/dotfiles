@@ -36,13 +36,6 @@ Plug 'jiangmiao/auto-pairs', { 'tag': 'v2.0.0' }
     let g:AutoPairsShortcutJump=''
     let g:AutoPairsMoveCharacter=''
     let g:AutoPairsShortcutBackInsert=''
-Plug 'ctrlpvim/ctrlp.vim', { 'tag': '1.80' }
-    let g:ctrlp_show_hidden = 1
-    let g:ctrlp_working_path_mode = 'ra'
-    let g:ctrlp_custom_ignore = '\.git$\|build$\|node_modules$\|ext'
-    let g:ctrlp_lazy_update = 100
-    " ignore files from .gitignore
-    let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 Plug 'editorconfig/editorconfig-vim', { 'tag': 'v1.0.0-beta' }
 Plug 'mattn/emmet-vim'
 Plug 'scrooloose/nerdtree', { 'tag': '6.6.0', 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
@@ -109,6 +102,8 @@ Plug 'wincent/ferret'
     nmap <leader>ss <Plug>(FerretAcks)
     nmap <leader>sl <Plug>(FerretLack)
     nmap <leader>sb <Plug>(FerretBacks)
+Plug '~/.fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 colorscheme nord
@@ -148,6 +143,11 @@ command! Wqa wqa
 command! Q quit
 map <C-b> :NERDTreeToggle<cr>
 map <leader>br :NERDTreeFind<cr>
+map <C-p> :Files<cr>
+map <leader>ob :Buffers<cr>
+map <leader>og :GFiles<cr>
+map <leader>oG :GFiles?<cr>
+map <leader>oh :History<cr>
 
 "== FUNCTIONS ==
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
