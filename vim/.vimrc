@@ -19,7 +19,10 @@ set lazyredraw
 set showcmd
 set ignorecase smartcase
 set autoread
+set noshowmode
 set termguicolors
+set showtabline=2
+set laststatus=2
 
 call plug#begin('~/.vim/plugged')
 Plug 'arcticicestudio/nord-vim'
@@ -50,12 +53,42 @@ Plug 'scrooloose/nerdtree', { 'tag': '6.6.0', 'on': ['NERDTreeToggle', 'NERDTree
     " close vim if the only opened window in NERDTree
     autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on':  'NERDTreeToggle'  }
-Plug 'vim-airline/vim-airline', { 'tag': 'v0.10' }
-    " Enable the list of buffers
-    let g:airline#extensions#tabline#enabled = 1
-    " Show just the filename
-    let g:airline#extensions#tabline#fnamemod = ':t'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
+	let g:lightline = {
+		\ 'active': {
+        \   'left':[ [ 'mode', 'paste' ],
+        \            [ 'gitbranch', 'readonly', 'modified' ]
+        \   ],
+		\ },
+		\ 'colorscheme': 'nord',
+		\ 'component': { 'lineinfo': ' %3l:%-2v' },
+		\ 'component_expand': { 'buffers': 'lightline#bufferline#buffers' },
+		\ 'component_function': { 'readonly': 'LightlineReadonly', 'gitbranch': 'LightlineFugitiveHead' },
+		\ 'component_type': { 'buffers': 'tabsel' },
+		\ 'separator': { 'left': '', 'right': '' },
+		\ 'subseparator': { 'left': '', 'right': '' },
+		\ 'tabline': { 'left': [['buffers']], 'right': [['close']] }
+		\ }
+	function! LightlineReadonly()
+		return &readonly ? '' : ''
+	endfunction
+	function! LightlineFugitiveHead()
+		if exists('*FugitiveHead')
+			let branch = FugitiveHead()
+			return branch !=# '' ? ''.branch : ''
+		endif
+		return ''
+	endfunction
+Plug 'mengelbrecht/lightline-bufferline'
+    nmap <Leader>1 <Plug>lightline#bufferline#go(1)
+    nmap <Leader>2 <Plug>lightline#bufferline#go(2)
+    nmap <Leader>3 <Plug>lightline#bufferline#go(3)
+    nmap <Leader>4 <Plug>lightline#bufferline#go(4)
+    nmap <Leader>5 <Plug>lightline#bufferline#go(5)
+    nmap <Leader>6 <Plug>lightline#bufferline#go(6)
+    nmap <Leader>7 <Plug>lightline#bufferline#go(7)
+    nmap <Leader>8 <Plug>lightline#bufferline#go(8)
+    nmap <Leader>9 <Plug>lightline#bufferline#go(9)
 Plug 'airblade/vim-gitgutter'
 Plug 'pangloss/vim-javascript'
 Plug 'posva/vim-vue'
