@@ -18,6 +18,7 @@ set hlsearch
 set lazyredraw
 set showcmd
 set ignorecase smartcase
+set backspace=indent,eol,start
 set autoread
 set noshowmode
 set termguicolors
