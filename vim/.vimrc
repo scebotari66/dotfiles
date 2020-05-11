@@ -74,6 +74,7 @@ Plug 'itchyny/lightline.vim'
 		return ''
 	endfunction
 Plug 'mengelbrecht/lightline-bufferline'
+    let g:lightline#bufferline#filename_modifier = ':t'
     nmap <Leader>1 <Plug>lightline#bufferline#go(1)
     nmap <Leader>2 <Plug>lightline#bufferline#go(2)
     nmap <Leader>3 <Plug>lightline#bufferline#go(3)
