@@ -133,8 +133,12 @@ vnoremap K 5k
 " Move faster in buffer list
 map gb :bnext<CR>
 map gB :bprev<CR>
+" Write all changed buffers
+map <leader>w :wa<cr>
+" Quit the current window
+nnoremap <leader>q :q<cr> 
 " Switch to previous buffer then delete the current one
-nnoremap <leader>q :bp<cr>:bd #<cr> 
+nnoremap <leader>x :bp<cr>:bd #<cr> 
 " Close all buffers except the current one
 nnoremap <leader>bd :%bd<cr>:e#<cr>:bd#<cr>
 " Tolerate first uppercase letter in common commands
