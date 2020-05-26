@@ -1,7 +1,7 @@
 set tab-size = 4
 set ignore-case = smart-case
 set refresh-mode = periodic
-set refresh-interval = 5
+set refresh-interval = 10
 
 set main-view-author = email-user
 
