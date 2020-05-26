@@ -6,9 +6,16 @@ set refresh-interval = 5
 set main-view-author = email-user
 
 bind generic S :source ~/.tigrc
+bind generic g none
+bind generic gg move-first-line
+bind generic G move-last-line
+
 bind main C @git checkout %(commit)
 bind main Y @sh -c "echo %(commit) | pbcopy"
+bind main G move-last-line
+
 bind status A @git add -A
 bind status + !git commit --amend
 bind status D ?@rm %(file)
+
 bind stage <Enter> :/^@@
