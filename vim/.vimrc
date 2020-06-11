@@ -31,7 +31,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive', { 'tag': 'v3.2' }
 Plug 'tpope/vim-surround'
 Plug 'flazz/vim-colorschemes'
-Plug 'dense-analysis/ale', { 'tag': 'v2.6.0' }
+Plug 'dense-analysis/ale', { 'tag': 'v2.7.0' }
 Plug 'mg979/vim-visual-multi', { 'tag': 'v.0.5.3' }
 Plug 'jiangmiao/auto-pairs', { 'tag': 'v2.0.0' }
     let g:AutoPairsShortcutJump=''
