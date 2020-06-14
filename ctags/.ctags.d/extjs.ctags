@@ -1,0 +1,11 @@
+--recurse=yes
+--tag-relative=yes
+--exclude=.git
+
+--langdef=extjs
+--map-extjs=+.js
+--kinddef-extjs=c,class,classes
+--kinddef-extjs=m,method,methods
+--mline-regex-extjs=/Ext.define\([[:space:]]*\'(.*)\',/\1/c,class,classes/{mgroup=3}{scope=push}
+--regex-extjs=/^[ \t]+([a-zA-Z]+)\(.*\)/\1/m,method,methods/
+--regex-extjs=/^}+\);$///{scope=pop}{placeholder}
