@@ -156,6 +156,15 @@ map <leader>oG :GFiles?<cr>
 map <leader>oh :History<cr>
 " https://vim.fandom.com/wiki/Selecting_your_pasted_text
 nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
+" Aliases to interact with system clipboard
+nmap <Leader>y "+y
+vmap <Leader>y "+y
+nmap <Leader>d "+d
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+vmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>P "+P
 
 "== FUNCTIONS ==
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
