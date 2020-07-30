@@ -151,6 +151,7 @@ map <C-b> :NERDTreeToggle<cr>
 map <leader>br :NERDTreeFind<cr>
 map <C-p> :Files<cr>
 map <leader>ob :Buffers<cr>
+map <leader>oc :BCommits<cr>
 map <leader>og :GFiles?<cr>
 map <leader>oG :GFiles<cr>
 map <leader>oh :History<cr>
