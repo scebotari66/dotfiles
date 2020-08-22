@@ -106,6 +106,8 @@ Plug 'wincent/ferret'
     nmap <leader>sb <Plug>(FerretBacks)
 Plug '~/.fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'stsewd/fzf-checkout.vim'
+    nmap <leader>gc :GCheckout<cr>
 call plug#end()
 
 colorscheme nord
