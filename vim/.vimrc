@@ -32,14 +32,14 @@ Plug 'tpope/vim-fugitive', { 'tag': 'v3.2' }
 Plug 'tpope/vim-surround'
 Plug 'flazz/vim-colorschemes'
 Plug 'dense-analysis/ale', { 'tag': 'v2.7.0' }
-Plug 'mg979/vim-visual-multi', { 'tag': 'v.0.5.3' }
+Plug 'mg979/vim-visual-multi', { 'tag': 'v0.5.7' }
 Plug 'jiangmiao/auto-pairs', { 'tag': 'v2.0.0' }
     let g:AutoPairsShortcutJump=''
     let g:AutoPairsMoveCharacter=''
     let g:AutoPairsShortcutBackInsert=''
-Plug 'editorconfig/editorconfig-vim', { 'tag': 'v1.0.0-beta' }
+Plug 'editorconfig/editorconfig-vim', { 'tag': 'v1.1.1' }
 Plug 'mattn/emmet-vim'
-Plug 'scrooloose/nerdtree', { 'tag': '6.6.0', 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
+Plug 'preservim/nerdtree', { 'tag': '6.9.9', 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
     let NERDTreeShowHidden=1
     let NERDTreeMinimalUI=1
     let NERDTreeMouseMode=2
