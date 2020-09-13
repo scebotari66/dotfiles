@@ -49,6 +49,8 @@ Plug 'preservim/nerdtree', { 'tag': '6.9.9', 'on': ['NERDTreeToggle', 'NERDTreeF
     let NERDTreeIgnore=['\.DS_Store$']
     " close vim if the only opened window in NERDTree
     autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+    map <C-b> :NERDTreeToggle<cr>
+    map <leader>br :NERDTreeFind<cr>
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on':  'NERDTreeToggle'  }
 Plug 'itchyny/lightline.vim'
 	let g:lightline = {
@@ -101,14 +103,21 @@ Plug 'wincent/ferret'
     nmap <leader>fa <Plug>(FerretAck)
     nmap <leader>ff <Plug>(FerretAck)
     nmap <leader>fl <Plug>(FerretLack)
-    nmap <leader>fb <Plug>(FerretBack)
+    nmap <leader>fb :Back<space>
     nmap <leader>fw <Plug>(FerretAckWord)
     nmap <leader>sa <Plug>(FerretAcks)
     nmap <leader>ss <Plug>(FerretAcks)
     nmap <leader>sl <Plug>(FerretLack)
-    nmap <leader>sb <Plug>(FerretBacks)
 Plug '~/.fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+    map <C-p> :Files<cr>
+    map <leader>ob :Buffers<cr>
+    map <leader>oc :BCommits<cr>
+    map <leader>og :GFiles?<cr>
+    map <leader>oG :GFiles<cr>
+    map <leader>oh :History<cr>
+    map <leader>ot :BTags<cr>
+    map <leader>oT :Tags<cr>
 Plug 'stsewd/fzf-checkout.vim'
     nmap <leader>gc :GCheckout<cr>
 call plug#end()
@@ -122,8 +131,6 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader><leader> <c-^>
 nnoremap <silent> <esc><esc> :noh<cr>
-nnoremap <leader>j :cnext<cr>
-nnoremap <leader>k :cprev<cr>
 map <leader>J :join<cr>
 " Move around splits with <c-hjkl>
 nnoremap <c-j> <c-w>j
@@ -135,10 +142,6 @@ noremap J 5j
 vnoremap J 5j
 noremap K 5k
 vnoremap K 5k
-" Move faster in buffer list
-map gb :bnext<CR>
-map gB :bprev<CR>
-" Write all changed buffers
 map <leader>w :wa<cr>
 " Quit the current window
 nnoremap <leader>q :q<cr> 
@@ -152,14 +155,6 @@ command! Wa wa
 command! Wq wq
 command! Wqa wqa
 command! Q quit
-map <C-b> :NERDTreeToggle<cr>
-map <leader>br :NERDTreeFind<cr>
-map <C-p> :Files<cr>
-map <leader>ob :Buffers<cr>
-map <leader>oc :BCommits<cr>
-map <leader>og :GFiles?<cr>
-map <leader>oG :GFiles<cr>
-map <leader>oh :History<cr>
 " https://vim.fandom.com/wiki/Selecting_your_pasted_text
 nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
 " Aliases to interact with system clipboard
