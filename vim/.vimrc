@@ -104,6 +104,7 @@ Plug 'wincent/ferret'
     nmap <leader>ff <Plug>(FerretAck)
     nmap <leader>fl <Plug>(FerretLack)
     nmap <leader>fb :Back<space>
+    vnoremap <leader>fv "yy:Ack <C-r>y<cr><cr>
     nmap <leader>fw <Plug>(FerretAckWord)
     nmap <leader>sa <Plug>(FerretAcks)
     nmap <leader>ss <Plug>(FerretAcks)
