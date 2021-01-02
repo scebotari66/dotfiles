@@ -6,7 +6,7 @@
 --map-extjs=+.js
 --kinddef-extjs=c,class,classes
 --kinddef-extjs=m,method,methods
---mline-regex-extjs=/^Ext.define\([[:space:]]*\'(.*)\',/\1/c/{mgroup=1}{scope=push}
+--mline-regex-extjs=/^Ext.define\([[:space:]]*'(.*)',/\1/c/{mgroup=1}{scope=push}
 --regex-extjs=/^}.+\);$///{scope=pop}{placeholder}
 --regex-extjs=/^[\t]{1}([a-zA-Z]+)\(.*\)[[:space:]]+{/\1/m/{mgroup=1}
 --regex-extjs=/^[ ]{4}([a-zA-Z]+)\(.*\)[[:space:]]+{/\1/m/{mgroup=1}
