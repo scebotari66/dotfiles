@@ -92,6 +92,7 @@ Plug 'mengelbrecht/lightline-bufferline'
     nmap <Leader>9 <Plug>lightline#bufferline#go(9)
 Plug 'airblade/vim-gitgutter'
 Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
 Plug 'posva/vim-vue'
 Plug 'wellle/targets.vim', { 'tag': 'v0.5.0' }
 Plug 'SirVer/ultisnips', { 'tag': '3.2' }
