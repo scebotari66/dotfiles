@@ -37,6 +37,7 @@ Plug 'dense-analysis/ale', { 'tag': 'v3.1.0' }
     nmap <leader>ln :ALENext<cr>
     nmap <leader>lp :ALEPrevious<cr>
 Plug 'mg979/vim-visual-multi', { 'tag': 'v0.5.8' }
+    let g:VM_theme = 'neon'
 Plug 'jiangmiao/auto-pairs', { 'tag': 'v2.0.0' }
     let g:AutoPairsShortcutJump=''
     let g:AutoPairsMoveCharacter=''
