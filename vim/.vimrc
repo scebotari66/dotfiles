@@ -33,17 +33,17 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'flazz/vim-colorschemes'
-Plug 'dense-analysis/ale', { 'tag': 'v3.0.0' }
+Plug 'dense-analysis/ale', { 'tag': 'v3.1.0' }
     nmap <leader>ln :ALENext<cr>
     nmap <leader>lp :ALEPrevious<cr>
-Plug 'mg979/vim-visual-multi', { 'tag': 'v0.5.7' }
+Plug 'mg979/vim-visual-multi', { 'tag': 'v0.5.8' }
 Plug 'jiangmiao/auto-pairs', { 'tag': 'v2.0.0' }
     let g:AutoPairsShortcutJump=''
     let g:AutoPairsMoveCharacter=''
     let g:AutoPairsShortcutBackInsert=''
 Plug 'editorconfig/editorconfig-vim', { 'tag': 'v1.1.1' }
 Plug 'mattn/emmet-vim'
-Plug 'preservim/nerdtree', { 'tag': '6.9.9', 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
+Plug 'preservim/nerdtree', { 'tag': '6.10.3', 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
     let NERDTreeShowHidden=1
     let NERDTreeMinimalUI=1
     let NERDTreeMouseMode=2
