@@ -120,6 +120,7 @@ Plug 'junegunn/fzf.vim'
     map <leader>og :GFiles?<cr>
     map <leader>oG :GFiles<cr>
     map <leader>oh :History<cr>
+    map <leader>ol :BLines<cr>
     map <leader>ot :BTags<cr>
     map <leader>oT :Tags<cr>
 Plug 'stsewd/fzf-checkout.vim'
