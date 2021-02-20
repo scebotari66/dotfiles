@@ -9,13 +9,14 @@ alias -- -="cd -"
 
 #SHORTCUTS
 alias d="docker"
+alias dc="docker-compose"
 alias f="vifm"
 alias g="git"
+alias mx="tmuxinator"
 alias o="open"
+alias sa="sencha"
 alias t="tmux"
 alias v="vim"
-alias dc="docker-compose"
-alias sa="sencha"
 alias yt="youtube-dl"
 alias ytmp3="youtube-dl --extract-audio --audio-format mp3"
 
