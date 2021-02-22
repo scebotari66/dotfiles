@@ -109,6 +109,7 @@ Plug 'wincent/ferret'
     nmap <leader>fb :Back<space>
     vnoremap <leader>fv "yy:Ack <C-r>y<cr><cr>
     nmap <leader>fw <Plug>(FerretAckWord)
+    nmap <leader>fW <Plug>(FerretAckWord)
     nmap <leader>sa <Plug>(FerretAcks)
     nmap <leader>ss <Plug>(FerretAcks)
     nmap <leader>sl <Plug>(FerretLack)
@@ -120,7 +121,7 @@ Plug 'junegunn/fzf.vim'
     map <leader>og :GFiles?<cr>
     map <leader>oG :GFiles<cr>
     map <leader>oh :History<cr>
-    map <leader>ol :BLines<cr>
+    map <leader>oo :BLines<cr>
     map <leader>ot :BTags<cr>
     map <leader>oT :Tags<cr>
 Plug 'stsewd/fzf-checkout.vim'
