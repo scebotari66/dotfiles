@@ -49,6 +49,7 @@
 	ps    = push
 	psf   = push -f
 	psu   = push -u
+	psoh  = push -u origin HEAD
 	mg    = merge
 	rt    = remote
 	rtv   = remote -v
