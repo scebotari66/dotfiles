@@ -24,6 +24,7 @@ set noshowmode
 set termguicolors
 set showtabline=2
 set laststatus=2
+set foldlevelstart=99
 
 call plug#begin('~/.vim/plugged')
 Plug 'arcticicestudio/nord-vim'
@@ -185,3 +186,12 @@ function! RenameFile()
     endif
 endfunction
 map <leader>n :call RenameFile()<cr>
+
+"== FOLDING ==
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+augroup javascript_folding
+    au!
+    au FileType javascript setlocal foldmethod=syntax
+augroup END
+nnoremap <silent> <leader>z :let&l:foldlevel = indent(".") / &sw<cr>
+highlight Folded guifg=#5E81AC
