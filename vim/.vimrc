@@ -127,6 +127,21 @@ Plug 'junegunn/fzf.vim'
     map <leader>oT :Tags<cr>
 Plug 'stsewd/fzf-checkout.vim'
     nmap <leader>gc :GCheckout<cr>
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    let g:coc_global_extensions = [
+    \ 'coc-css',
+    \ 'coc-emoji',
+    \ 'coc-eslint',
+    \ 'coc-highlight',
+    \ 'coc-html',
+    \ 'coc-json',
+    \ 'coc-tsserver',
+    \ 'coc-ultisnips',
+    \ 'coc-yaml',
+    \ ]
+    nmap <silent> <leader>ld <Plug>(coc-definition)
+    nmap <silent> <leader>lf <Plug>(coc-references)
+    nmap <leader>lr <Plug>(coc-rename)
 call plug#end()
 
 colorscheme nord
