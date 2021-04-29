@@ -126,7 +126,7 @@ Plug 'junegunn/fzf.vim'
     map <leader>ot :BTags<cr>
     map <leader>oT :Tags<cr>
 Plug 'stsewd/fzf-checkout.vim'
-    nmap <leader>gc :GCheckout<cr>
+    nmap <leader>gc :GBranches<cr>
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
     let g:coc_global_extensions = [
     \ 'coc-css',
