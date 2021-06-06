@@ -14,6 +14,9 @@ PROMPT='%F{red}%n%f@%F{green}%m%f %F{blue}%B%~%b%f %# '
 RPROMPT='[%F{yellow}%?%f]'
 
 # Load device specific configs
-if [ -f ~/.zshrc.local ]; then
-    source ~/.zshrc.local
-fi
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude .git"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
