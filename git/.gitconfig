@@ -10,6 +10,8 @@
 	#up-to-date or the merge can be resolved as a fast-forward
 	ff    = only
 	tool  = meld
+[pull]
+	ff    = only
 [push]
 	#Push the current branch back to the branch whose changes are usually integrated into the current branch
 	default = simple
