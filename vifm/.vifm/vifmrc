@@ -22,5 +22,4 @@ mark c ~/Code
 mark d ~/Desktop
 mark l ~/Downloads
 mark m ~/Documents
-mark x ~/dotfiles
-mark w ~/Wip
+mark x ~/.dotfiles
