@@ -19,10 +19,9 @@ do
   fi
 done
 
-#Add bash aliases
-if [ -f ~/.bash_aliases ]; then
-    source ~/.bash_aliases
-fi
+# Load aliases
+[ -f ~/.aliases ] && source ~/.aliases
+
 #Add system specific customizations
 if [ -f ~/.bash_profile_local ] ; then
     . ~/.bash_profile_local

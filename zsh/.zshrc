@@ -16,6 +16,9 @@ RPROMPT='[%F{yellow}%?%f]'
 # Load device specific configs
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
+# Load aliases
+[ -f ~/.aliases ] && source ~/.aliases
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude .git"

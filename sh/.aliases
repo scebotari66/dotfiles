@@ -42,6 +42,6 @@ if [ ! $(uname -s) = "Darwin" ]; then
 fi
 
 #Add system specific aliases
-if [ -f ~/.bash_aliases_local ] ; then
-    . ~/.bash_aliases_local
+if [ -f ~/.aliases_local ] ; then
+    . ~/.aliases_local
 fi
