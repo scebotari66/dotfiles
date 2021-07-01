@@ -104,7 +104,7 @@ Plug 'SirVer/ultisnips', { 'tag': '3.2' }
     let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 Plug 'wincent/ferret'
     let g:FerretMap=0
-    nmap <leader>fa <Plug>(FerretAck)
+    nmap <silent> <expr> <leader>fa (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Ack "
     nmap <leader>ff <Plug>(FerretAck)
     nmap <leader>fl <Plug>(FerretLack)
     nmap <leader>fb :Back<space>
