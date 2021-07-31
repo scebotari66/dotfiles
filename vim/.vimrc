@@ -29,7 +29,7 @@ set foldlevelstart=99
 call plug#begin('~/.vim/plugged')
 Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-fugitive', { 'tag': 'v3.2' }
+Plug 'tpope/vim-fugitive', { 'tag': 'v3.3' }
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
@@ -45,7 +45,7 @@ Plug 'jiangmiao/auto-pairs', { 'tag': 'v2.0.0' }
     let g:AutoPairsShortcutBackInsert=''
 Plug 'editorconfig/editorconfig-vim', { 'tag': 'v1.1.1' }
 Plug 'mattn/emmet-vim'
-Plug 'preservim/nerdtree', { 'tag': '6.10.3', 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
+Plug 'preservim/nerdtree', { 'tag': '6.10.10' }
     let NERDTreeShowHidden=1
     let NERDTreeMinimalUI=1
     let NERDTreeMouseMode=2
