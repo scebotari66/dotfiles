@@ -43,6 +43,7 @@ Plug 'jiangmiao/auto-pairs', { 'tag': 'v2.0.0' }
     let g:AutoPairsShortcutJump=''
     let g:AutoPairsMoveCharacter=''
     let g:AutoPairsShortcutBackInsert=''
+    let g:AutoPairsFlyMode=1 
 Plug 'editorconfig/editorconfig-vim', { 'tag': 'v1.1.1' }
 Plug 'mattn/emmet-vim'
 Plug 'preservim/nerdtree', { 'tag': '6.10.10' }
