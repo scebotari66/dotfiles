@@ -29,7 +29,7 @@ set foldlevelstart=99
 call plug#begin('~/.vim/plugged')
 Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-fugitive', { 'tag': 'v3.3' }
+Plug 'tpope/vim-fugitive', { 'tag': 'v3.4' }
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
