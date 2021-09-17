@@ -17,6 +17,7 @@
 	default = simple
 [alias]
 	aa    = add --all
+    bl    = blame
 	co    = checkout
 	cob   = checkout -b
 	cm    = commit
