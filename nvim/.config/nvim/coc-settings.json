@@ -1,0 +1,6 @@
+{
+    "tsserver.log": "off",
+    "javascript.showUnused": false,
+    "javascript.suggestionActions.enabled": false,
+    "coc.preferences.colorSupport": false
+}
