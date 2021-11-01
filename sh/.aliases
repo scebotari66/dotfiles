@@ -16,7 +16,7 @@ alias mx="tmuxinator"
 alias o="open"
 alias sa="sencha"
 alias t="tmux"
-alias v="vim"
+alias v="nvim"
 alias yt="youtube-dl"
 alias ytmp3="youtube-dl --extract-audio --audio-format mp3"
 
