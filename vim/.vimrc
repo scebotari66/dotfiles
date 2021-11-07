@@ -137,9 +137,15 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
     \ 'coc-ultisnips',
     \ 'coc-yaml',
     \ ]
+    nmap <silent> [g <Plug>(coc-diagnostic-prev)
+    nmap <silent> ]g <Plug>(coc-diagnostic-next)
     nmap <silent> <leader>ld <Plug>(coc-definition)
     nmap <silent> <leader>lf <Plug>(coc-references)
-    nmap <leader>lr <Plug>(coc-rename)
+    nmap <silent> <leader>ll :<C-u>CocDiagnostics<CR>
+    nmap <leader>ln <Plug>(coc-rename)
+    " Highlight the symbol and its references when holding the cursor.
+    autocmd CursorHold * silent call CocActionAsync('highlight')
+    command! -nargs=0 Prettier :CocCommand prettier.formatFile
 call plug#end()
 
 colorscheme nord
