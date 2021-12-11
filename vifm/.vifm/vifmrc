@@ -8,6 +8,9 @@ set confirm-=delete
 " change colorscheme
 colorscheme darkdesert
 
+" change default editor
+set vicmd=nvim
+
 set dotfiles
 
 " mappings
