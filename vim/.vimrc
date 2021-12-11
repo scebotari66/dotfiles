@@ -146,6 +146,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Highlight the symbol and its references when holding the cursor.
     autocmd CursorHold * silent call CocActionAsync('highlight')
     command! -nargs=0 Prettier :CocCommand prettier.formatFile
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 call plug#end()
 
 colorscheme nord
