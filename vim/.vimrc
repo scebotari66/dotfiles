@@ -176,7 +176,7 @@ nnoremap <leader>q :q<cr>
 " Switch to previous buffer then delete the current one
 nnoremap <leader>x :bp<cr>:bd #<cr> 
 " Close all buffers except the current one
-nnoremap <leader>bd :%bd<cr>:e#<cr>:bd#<cr>
+nnoremap <leader>bd :%bd<cr>:e#<cr>:bd#<cr>:NERDTreeFind<cr>
 " Tolerate first uppercase letter in common commands
 command! W write
 command! Wa wa
