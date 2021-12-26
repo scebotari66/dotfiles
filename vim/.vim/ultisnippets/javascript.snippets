@@ -1,13 +1,27 @@
-snippet fu "anonymous function" i
+snippet fu "Anonymous function" i
 function($1) {$2}
 endsnippet
 
-snippet fa "arrow function" i
+snippet fa "Arrow function" i
 ($1) => {$2}
 endsnippet
 
+snippet fcc "Function context call" i
+call(this$1);
+endsnippet
+
+snippet fca "Function context apply" i
+apply(this$1, arguments$2);
+endsnippet
+
+snippet iife "Immediately-Invoked Function Expression"
+(function(${1:window}) {
+	${VISUAL}$0
+}(${2:$1}))
+endsnippet
+
 snippet cl
-console.log($1);
+console.log(${1:${VISUAL}})
 endsnippet
 
 snippet cla
