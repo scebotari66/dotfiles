@@ -216,10 +216,8 @@ map <leader>n :call RenameFile()<cr>
 
 "== FOLDING ==
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-augroup javascript_folding
-    au!
-    au FileType javascript setlocal foldmethod=syntax
-augroup END
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
 nnoremap <silent> <leader>z :let&l:foldlevel = indent(".") / &sw<cr>
 highlight Folded guifg=#5E81AC
 
