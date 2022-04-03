@@ -34,13 +34,13 @@ call plug#begin()
 
 Plug 'arcticicestudio/nord-vim', { 'tag': 'v0.18.0' }
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-fugitive', { 'tag': 'v3.4' }
+Plug 'tpope/vim-fugitive', { 'tag': 'v3.6' }
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'mg979/vim-visual-multi', { 'tag': 'v0.5.8' }
     let g:VM_theme = 'neon'
-Plug 'LunarWatcher/auto-pairs', { 'tag': 'v3.0.0' }
+Plug 'LunarWatcher/auto-pairs', { 'tag': 'v3.0.1' }
     let g:AutoPairsCompatibleMaps = 0
     let g:AutoPairsShortcutJump=''
     let g:AutoPairsMoveCharacter=''
