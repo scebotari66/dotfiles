@@ -47,6 +47,7 @@
 	rbc   = rebase --continue
 	rs    = reset
 	rsh   = reset --hard
+	rsl   = reset HEAD^
 	pl    = pull
 	plr   = pull --rebase
 	ps    = push
