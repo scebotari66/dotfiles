@@ -32,7 +32,7 @@ set updatetime=300
 
 call plug#begin()
 
-Plug 'arcticicestudio/nord-vim', { 'tag': 'v0.18.0' }
+Plug 'arcticicestudio/nord-vim', { 'tag': 'v0.19.0' }
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive', { 'tag': 'v3.6' }
 Plug 'tpope/vim-repeat'
