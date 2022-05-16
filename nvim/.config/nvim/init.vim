@@ -132,12 +132,14 @@ Plug 'stsewd/fzf-checkout.vim'
     nmap <leader>gc :GBranches<cr>
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
     let g:coc_global_extensions = [
+    \ '@yaegassy/coc-volar',
     \ 'coc-css',
     \ 'coc-emoji',
     \ 'coc-eslint',
     \ 'coc-highlight',
     \ 'coc-html',
     \ 'coc-json',
+    \ 'coc-prettier',
     \ 'coc-tsserver',
     \ 'coc-ultisnips',
     \ 'coc-yaml',
@@ -146,11 +148,16 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
     nmap <silent> ]g <Plug>(coc-diagnostic-next)
     nmap <silent> <leader>ld <Plug>(coc-definition)
     nmap <silent> <leader>lf <Plug>(coc-references)
+    nmap <silent> <leader>lF :<C-u>CocCommand tsserver.findAllFileReferences<CR>
     nmap <silent> <leader>ll :<C-u>CocDiagnostics<CR>
     nmap <leader>ln <Plug>(coc-rename)
     " Highlight the symbol and its references when holding the cursor.
     autocmd CursorHold * silent call CocActionAsync('highlight')
     command! -nargs=0 Prettier :CocCommand prettier.formatFile
+    " Use <c-space> to trigger completion.
+    inoremap <silent><expr> <c-space> coc#refresh()
+    " Use <leader>ld to show documentation in preview window
+    nnoremap <silent> <leader>li :call CocActionAsync('doHover')<CR>
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 Plug 'nvim-treesitter/playground'

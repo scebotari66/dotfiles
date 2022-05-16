@@ -2,5 +2,5 @@
     "tsserver.log": "off",
     "javascript.showUnused": false,
     "javascript.suggestionActions.enabled": false,
-    "coc.preferences.colorSupport": false
+    "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "vue", "css", "scss"]
 }
