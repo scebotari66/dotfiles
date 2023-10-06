@@ -20,6 +20,8 @@
     bl    = blame
 	co    = checkout
 	cob   = checkout -b
+	cod   = checkout develop
+	com   = checkout master
 	cm    = commit
 	cma   = commit --all
 	cmm   = commit --amend
