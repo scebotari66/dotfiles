@@ -18,6 +18,7 @@
 [alias]
 	aa    = add --all
     bl    = blame
+    bs    = bisect
 	co    = checkout
 	cob   = checkout -b
 	cod   = checkout develop
