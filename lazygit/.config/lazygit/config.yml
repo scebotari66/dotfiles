@@ -1,0 +1,6 @@
+# https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md
+
+keybinding:
+  universal:
+    # temporarily disable it, as it is used in tig, and I sometimes accidentally access it
+    quit: null
