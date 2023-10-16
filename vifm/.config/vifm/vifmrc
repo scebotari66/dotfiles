@@ -5,9 +5,6 @@ set smartcase
 " allow moving files to trash without confirmation
 set confirm-=delete
 
-" change colorscheme
-colorscheme darkdesert
-
 " change default editor
 set vicmd=nvim
 
