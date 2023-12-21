@@ -1,7 +1,3 @@
 # Dotfiles
 This is a dotfiles repository. [Stow](https://www.gnu.org/software/stow/) is used for symlinking.
-
-## Setup
-    $ git clone --recursive https://github.com/scebotari66/dotfiles.git ~/dotfiles
-    $ cd ~/dotfiles
-    $ for d in */; do stow "$d"; done
+The `setup.sh` script should be used to set everything up.
