@@ -19,6 +19,7 @@
 	aa    = add --all
     bl    = blame
     bs    = bisect
+	cl    = clone
 	co    = checkout
 	cob   = checkout -b
 	cod   = checkout develop
