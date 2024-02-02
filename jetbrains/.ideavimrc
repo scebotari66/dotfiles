@@ -63,6 +63,8 @@ map <leader>bd <Action>(CloseAllEditorsButActive)
 map <leader>b> <Action>(CloseAllToTheRight)
 map <leader>b< <Action>(CloseAllToTheLeft)
 
+map <leader>lu <Action>(ShowUsages)
+
 map <leader>og <Action>(Annotate)
 map <leader>oc <Action>(Vcs.ShowTabbedFileHistory)
 
