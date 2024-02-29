@@ -59,6 +59,7 @@
 	psu   = push -u
 	psoh  = push -u origin HEAD
 	mg    = merge
+	mga   = merge --abort
 	rt    = remote
 	rtv   = remote -v
 	rta   = remote add
