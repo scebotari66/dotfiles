@@ -95,7 +95,7 @@ Plug 'mengelbrecht/lightline-bufferline'
     nmap <Leader>7 <Plug>lightline#bufferline#go(7)
     nmap <Leader>8 <Plug>lightline#bufferline#go(8)
     nmap <Leader>9 <Plug>lightline#bufferline#go(9)
-Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter', {'branch': 'main'}
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'posva/vim-vue'
