@@ -32,23 +32,23 @@ set updatetime=300
 
 call plug#begin()
 
-Plug 'arcticicestudio/nord-vim', { 'tag': 'v0.19.0' }
+Plug 'nordtheme/vim', { 'tag': 'v0.19.0' }
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-fugitive', { 'tag': 'v3.6' }
+Plug 'tpope/vim-fugitive', { 'tag': 'v3.7' }
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'mg979/vim-visual-multi', { 'tag': 'v0.5.8' }
     let g:VM_theme = 'neon'
-Plug 'LunarWatcher/auto-pairs', { 'tag': 'v3.0.1' }
+Plug 'LunarWatcher/auto-pairs', { 'tag': 'v4.0.2' }
     let g:AutoPairsCompatibleMaps = 0
     let g:AutoPairsShortcutJump=''
     let g:AutoPairsMoveCharacter=''
     let g:AutoPairsShortcutBackInsert=''
     let g:AutoPairsFlyMode=1 
-Plug 'editorconfig/editorconfig-vim', { 'tag': 'v1.1.1' }
+Plug 'editorconfig/editorconfig-vim', { 'tag': 'v1.2.0' }
 Plug 'mattn/emmet-vim'
-Plug 'preservim/nerdtree', { 'tag': '6.10.16' }
+Plug 'preservim/nerdtree', { 'tag': '7.1.2' }
     let NERDTreeShowHidden=1
     let NERDTreeMinimalUI=1
     let NERDTreeMouseMode=2
