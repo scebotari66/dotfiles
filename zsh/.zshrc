@@ -16,8 +16,9 @@ RPROMPT='[%F{yellow}%?%f]'
 # Load device specific configs
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
-# Load aliases
+# Load aliases and functions
 [ -f ~/.aliases ] && source ~/.aliases
+[ -f ~/.functions ] && source ~/.functions
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
