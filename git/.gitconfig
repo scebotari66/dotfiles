@@ -27,6 +27,9 @@
 	cm    = commit
 	cma   = commit --all
 	cmm   = commit --amend
+	cp    = cherry-pick
+	cpa   = cherry-pick --abort
+	cpc   = cherry-pick --continue
 	df    = diff
 	ds    = diff --staged
 	dw    = diff --word-diff
