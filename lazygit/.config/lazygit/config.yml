@@ -1,6 +1,16 @@
-# https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md
-
+git:
+  paging:
+    colorArg: always
+    pager: diff-so-fancy
+  mainBranches:
+    # updated to add "develop"
+    - master
+    - main
+    - develop
+gui:
+  skipDiscardChangeWarning: true
 keybinding:
   universal:
-    # temporarily disable it, as it is used in tig, and I sometimes accidentally access it
-    quit: null
+    # temporarily disable it, as it is used in tig,
+    # and I sometimes accidentally access it
+    quit: <disabled>
