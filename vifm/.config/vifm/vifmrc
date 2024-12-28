@@ -16,6 +16,8 @@ vnoremap J 5j
 noremap K 5k
 vnoremap K 5k
 nnoremap Q :q<cr>
+nnoremap <space>o :!open %c<CR>
+nnoremap <space>O :!open .<CR>
 
 " marks
 mark h ~/
