@@ -43,7 +43,7 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 # You can effectively turn off macOS "Hide application" (cmd-h) feature by toggling this flag
 # Useful if you don't use this macOS feature, but accidentally hit cmd-h or cmd-alt-h key
 # Also see: https://nikitabobko.github.io/AeroSpace/goodies#disable-hide-app
-automatically-unhide-macos-hidden-apps = false
+automatically-unhide-macos-hidden-apps = true
 
 # See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [workspace-to-monitor-force-assignment]
@@ -201,6 +201,11 @@ run = 'move-node-to-workspace O'
     alt-shift-y = 'move-node-to-workspace Y'
     alt-shift-z = 'move-node-to-workspace Z'
 
+    # See: https://nikitabobko.github.io/AeroSpace/commands#focus-monitor
+    alt-esc = 'focus-monitor --wrap-around next'
+    # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-monitor
+    alt-shift-esc = 'move-node-to-monitor --wrap-around --focus-follows-window next'
+
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
@@ -213,7 +218,9 @@ run = 'move-node-to-workspace O'
     alt-enter = 'fullscreen'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#close-all-windows-but-current
-    alt-x = ['close-all-windows-but-current --quit-if-last-window', 'close --quit-if-last-window']
+    alt-x = ['close-all-windows-but-current --quit-if-last-window']
+    # See: https://nikitabobko.github.io/AeroSpace/commands#close-all-windows-but-current
+    alt-shift-x = ['close-all-windows-but-current --quit-if-last-window', 'close --quit-if-last-window']
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
