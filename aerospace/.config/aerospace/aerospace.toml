@@ -77,10 +77,10 @@ run = 'move-node-to-workspace G'
 
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
-run = 'move-node-to-workspace O'
+run = 'move-node-to-workspace D'
 [[on-window-detected]]
 if.app-id = 'com.todoist.mac.Todoist'
-run = 'move-node-to-workspace O'
+run = 'move-node-to-workspace D'
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
