@@ -86,6 +86,20 @@ run = 'move-node-to-workspace D'
 if.app-id = 'com.spotify.client'
 run = 'move-node-to-workspace Z'
 
+[[on-window-detected]]
+if.app-id = 'com.openai.chat'
+run = 'move-node-to-workspace Q'
+[[on-window-detected]]
+if.app-id = 'ai.perplexity.mac'
+run = 'move-node-to-workspace Q'
+[[on-window-detected]]
+if.app-id = 'com.anthropic.claudefordesktop'
+run = 'move-node-to-workspace Q'
+
+[[on-window-detected]]
+if.app-id = 'org.keepassxc.keepassxc'
+run = 'layout floating'
+
 # Possible values: (qwerty|dvorak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
 [key-mapping]
@@ -227,7 +241,3 @@ run = 'move-node-to-workspace Z'
     alt-shift-j = ['join-with down', 'mode main']
     alt-shift-k = ['join-with up', 'mode main']
     alt-shift-l = ['join-with right', 'mode main']
-
-    down = 'volume down'
-    up = 'volume up'
-    shift-down = ['volume set 0', 'mode main']
