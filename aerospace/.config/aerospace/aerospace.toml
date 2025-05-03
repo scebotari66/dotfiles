@@ -51,10 +51,6 @@ B = 'secondary'
 
 # See: https://nikitabobko.github.io/AeroSpace/guide#on-window-detected-callback
 [[on-window-detected]]
-if.app-id = 'com.apple.finder'
-run = 'layout floating'
-
-[[on-window-detected]]
 if.app-id = 'com.googlecode.iterm2'
 run = 'move-node-to-workspace A'
 [[on-window-detected]]
@@ -98,6 +94,15 @@ run = 'move-node-to-workspace Q'
 
 [[on-window-detected]]
 if.app-id = 'org.keepassxc.keepassxc'
+run = 'layout floating'
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = 'layout floating'
+[[on-window-detected]]
+if.app-id = 'com.apple.Notes'
+run = 'layout floating'
+[[on-window-detected]]
+if.app-id = 'pl.maketheweb.cleanshotx'
 run = 'layout floating'
 
 # Possible values: (qwerty|dvorak)
