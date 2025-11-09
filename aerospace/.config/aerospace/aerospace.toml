@@ -81,6 +81,9 @@ run = 'move-node-to-workspace D'
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
 run = 'move-node-to-workspace Z'
+[[on-window-detected]]
+if.app-id = 'com.electron.cypress'
+run = 'move-node-to-workspace Z'
 
 [[on-window-detected]]
 if.app-id = 'com.openai.chat'
