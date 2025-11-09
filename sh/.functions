@@ -7,3 +7,9 @@ gif2video() {
 video2gif() {
   ffmpeg -i "$1" -pix_fmt rgb8 -r 10 video2gif.gif && gifsicle -O3 video2gif.gif -o video2gif.gif;
 }
+
+# makes a directory and cds inside
+mkcd () {
+  \mkdir -p "$1"
+  cd "$1"
+}
