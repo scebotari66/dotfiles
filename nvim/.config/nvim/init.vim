@@ -158,8 +158,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
     inoremap <silent><expr> <c-space> coc#refresh()
     " Use <leader>ld to show documentation in preview window
     nnoremap <silent> <leader>li :call CocActionAsync('doHover')<CR>
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+Plug 'nvim-treesitter/nvim-treesitter', {'branch': 'master', 'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter-textobjects', {'branch': 'master'}
 Plug 'nvim-treesitter/playground'
 
 call plug#end()
