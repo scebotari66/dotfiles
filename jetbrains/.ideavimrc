@@ -39,8 +39,9 @@ map <leader>ld <Action>(Debug)
 "" Map \b to toggle the breakpoint on the current line
 "map \b <Action>(ToggleLineBreakpoint)
 
-nnoremap g; <Action>JumpToLastChange
-nnoremap g, <Action>JumpToNextChange
+nmap g; <Action>(JumpToLastChange)
+nmap g, <Action>(JumpToNextChange)
+
 
 
 " Find more examples here: https://jb.gg/share-ideavimrc
@@ -55,6 +56,8 @@ map ]c <Action>(VcsShowNextChangeMarker)
 map [c <Action>(VcsShowPrevChangeMarker)
 map [e <Action>(MoveLineUp)
 map ]e <Action>(MoveLineDown)
+map [t <Action>(NextSplitter)
+map ]t <Action>(PrevSplitter)
 
 map <leader>x <Action>(CloseContent)
 map <leader>X <Action>(ReopenClosedTab)
