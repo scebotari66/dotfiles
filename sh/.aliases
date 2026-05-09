@@ -9,6 +9,7 @@ alias -- -="cd -"
 
 #SHORTCUTS
 alias b="brew"
+alias cc="claude"
 alias d="docker"
 alias dc="docker compose"
 alias f="vifm"
