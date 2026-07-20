@@ -13,3 +13,14 @@ mkcd () {
   \mkdir -p "$1"
   cd "$1"
 }
+
+# get notified when the previous command finishes
+notify() {
+  # Gets the last command from history, stripping the leading line numbers
+  local last_cmd=$(fc -ln -1 -1)
+  
+  # Escape double quotes to prevent AppleScript syntax syntax breaks
+  last_cmd=$(echo "$last_cmd" | sed 's/"/\\"/g')
+
+  osascript -e "display notification \"$last_cmd\" with title \"Task Finished\" sound name \"Glass\""
+}
