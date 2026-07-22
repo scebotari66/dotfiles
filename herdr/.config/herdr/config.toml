@@ -25,10 +25,11 @@ remove_worktree = "prefix+shift+b"
 # rename_workspace = "prefix+shift+w"
 # migrated from tmux: bind X kill-session
 close_workspace = "prefix+shift+x"
-# previous_workspace = "" # optional, unset by default
-# next_workspace = ""     # optional, unset by default
-# previous_agent = ""     # optional, unset by default
-# next_agent = ""         # optional, unset by default
+# migrated from tmux: prefix+( / prefix+) switch-client -p/-n (prev/next session)
+previous_workspace = "prefix+("
+next_workspace = "prefix+)"
+previous_agent = "prefix+;"
+next_agent = "prefix+'"
 # focus_agent = ""        # optional indexed binding, e.g. "prefix+alt+1..9"
 # remote_image_paste = "ctrl+v" # only active in herdr --remote; empty disables raw-key image paste
 # new_tab = "prefix+c"
@@ -96,7 +97,7 @@ navigate_workspace_down = "j"
 # sidebar_min_width = 18
 
 # Maximum sidebar width when expanded (columns)
-# sidebar_max_width = 36
+sidebar_max_width = 52
 
 # Terminal width at or below which Herdr uses the mobile single-column layout.
 # Increase this for foldables, tablets, or wide phone terminals.
