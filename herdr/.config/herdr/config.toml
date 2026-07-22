@@ -9,11 +9,14 @@ prefix = "ctrl+space"
 
 # Prefix-mode actions
 # help = "prefix+?"
-# settings = "prefix+s"
-# detach = "prefix+q"
+# migrated from tmux: prefix+s for settings freed up for the session/workspace picker below
+settings = "prefix+shift+s"
+# migrated from tmux: bind d detach (tmux prefix+d)
+detach = "prefix+d"
 # reload_config = "prefix+shift+r"
 # open_notification_target = "prefix+o"
-# workspace_picker = "prefix+w"
+# migrated from tmux: prefix+s = choose-tree (session list)
+workspace_picker = "prefix+s"
 # goto = "prefix+g"
 # new_workspace = "prefix+shift+n"
 # new_worktree = "prefix+shift+g"
@@ -34,8 +37,10 @@ rename_tab = "prefix+,"
 # next_tab = "prefix+n"
 # switch_tab = "prefix+1..9"
 # switch_workspace = ""   # optional indexed binding, e.g. "prefix+shift+1..9"
-# moved off prefix+shift+x to free it for close_workspace (migrated tmux X = kill-session)
-close_tab = "prefix+shift+q"
+# unset: rarely kill whole tabs, mostly just kill panes (prefix+x).
+# Note: "" explicitly unbinds; removing the line would revert to the default
+# prefix+shift+x, which collides with close_workspace above.
+close_tab = ""
 # rename_pane = "prefix+shift+p"
 # edit_scrollback = "prefix+e"
 # migrated from tmux: bind j/k/h/l select-pane -D/-U/-L/-R (already herdr's defaults)
