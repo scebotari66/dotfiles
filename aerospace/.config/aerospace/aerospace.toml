@@ -1,6 +1,9 @@
 # Place a copy of this config to ~/.aerospace.toml
 # After that, you can edit ~/.aerospace.toml to your liking
 
+# https://nikitabobko.github.io/AeroSpace/guide#config-version-2
+config-version = 2
+
 # You can use it to add commands that run after login to macOS user session.
 # 'start-at-login' needs to be 'true' for 'after-login-command' to work
 # Available commands: https://nikitabobko.github.io/AeroSpace/commands
@@ -112,6 +115,9 @@ if.app-id = 'pl.maketheweb.cleanshotx'
 run = 'layout floating'
 [[on-window-detected]]
 if.app-id = 'com.herotools.openwispr'
+run = 'layout floating'
+[[on-window-detected]]
+if.app-id = 'net.sonuscape.mouseless'
 run = 'layout floating'
 
 # Possible values: (qwerty|dvorak)
