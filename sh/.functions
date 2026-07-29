@@ -3,9 +3,25 @@ gif2video() {
   ffmpeg -f gif -i "$1" gif2video.mp4;
 }
 
-# converts a video to a gif image
+# converts a video to a high-quality gif image
+# usage: video2gif input.mov [fps] [width]   (defaults: 15 fps, original size)
 video2gif() {
-  ffmpeg -i "$1" -pix_fmt rgb8 -r 10 video2gif.gif && gifsicle -O3 video2gif.gif -o video2gif.gif;
+  local input="$1"
+  local fps="${2:-15}"
+  local width="$3"
+  local output="${input%.*}.gif"
+  local palette="$(mktemp -t palette).png"
+  local filters="fps=${fps}"
+  [ -n "$width" ] && filters="${filters},scale=${width}:-1:flags=lanczos"
+
+  # pass 1: build an optimal per-video color palette
+  ffmpeg -i "$input" -vf "${filters},palettegen=stats_mode=diff" -y "$palette" &&
+  # pass 2: render the gif using that palette with dithering
+  ffmpeg -i "$input" -i "$palette" \
+    -lavfi "${filters} [x]; [x][1:v] paletteuse=dither=sierra2_4a" \
+    -y "$output" &&
+  gifsicle -O3 "$output" -o "$output" &&
+  rm -f "$palette";
 }
 
 # makes a directory and cds inside
