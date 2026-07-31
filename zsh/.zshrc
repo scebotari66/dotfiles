@@ -20,12 +20,15 @@ RPROMPT='[%F{yellow}%?%f]'
 [ -f ~/.aliases ] && source ~/.aliases
 [ -f ~/.functions ] && source ~/.functions
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# fzf shell integration (Ctrl+T, Ctrl+R, Alt+C + completion)
+command -v fzf >/dev/null && source <(fzf --zsh)
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
-export FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude .git"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+if command -v fd >/dev/null; then
+  export FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude .git"
+  export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+fi
 [ -f "$HOME/.dropbox/info.json" ] && export DROPBOX=`cat $HOME/.dropbox/info.json | jq -r .personal.path`
 export TIGRC_USER="~/.config/tig/tigrc"
 
