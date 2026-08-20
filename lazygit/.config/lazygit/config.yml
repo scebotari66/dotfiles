@@ -1,7 +1,7 @@
 git:
-  pagers:
+  diffRenderers:
     - colorArg: always
-      pager: diff-so-fancy
+      command: diff-so-fancy
   mainBranches:
     # updated to add "develop"
     - master
