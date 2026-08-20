@@ -117,7 +117,7 @@ Plug 'wincent/ferret'
     nmap <leader>sa <Plug>(FerretAcks)
     nmap <leader>ss <Plug>(FerretAcks)
     nmap <leader>sl <Plug>(FerretLack)
-Plug '~/.fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
     map <C-p> :Files<cr>
     map <leader>ob :Buffers<cr>
