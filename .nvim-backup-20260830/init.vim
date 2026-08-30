@@ -1,27 +1,9 @@
 syntax on
 let mapleader=" "
 
-set t_Co=256
-set mouse=a
-set number
-set hidden
-set nobackup
 set noswapfile
-set expandtab
-set smartindent
 set showmatch
-set incsearch
-set hlsearch
-set lazyredraw
-set showcmd
-set ignorecase smartcase
-set backspace=indent,eol,start
-set autoread
-set noshowmode
-set termguicolors
-set showtabline=2
 set laststatus=2
-set foldlevelstart=99
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
@@ -30,20 +12,10 @@ set updatetime=300
 call plug#begin()
 
 Plug 'nordtheme/vim', { 'tag': 'v0.19.0' }
-Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive', { 'tag': 'v3.7' }
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'mg979/vim-visual-multi', { 'tag': 'v0.5.8' }
     let g:VM_theme = 'neon'
-Plug 'LunarWatcher/auto-pairs', { 'tag': 'v4.0.2' }
-    let g:AutoPairsCompatibleMaps = 0
-    let g:AutoPairsShortcutJump=''
-    let g:AutoPairsMoveCharacter=''
-    let g:AutoPairsShortcutBackInsert=''
-    let g:AutoPairsFlyMode=1 
-Plug 'editorconfig/editorconfig-vim', { 'tag': 'v1.2.0' }
 Plug 'mattn/emmet-vim'
 Plug 'preservim/nerdtree', { 'tag': '7.1.2' }
     let NERDTreeShowHidden=1
@@ -55,48 +27,9 @@ Plug 'preservim/nerdtree', { 'tag': '7.1.2' }
     map <C-b> :NERDTreeToggle<cr>
     map <leader>br :NERDTreeFind<cr>
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on':  'NERDTreeToggle'  }
-Plug 'itchyny/lightline.vim'
-	let g:lightline = {
-		\ 'active': {
-        \   'left':[ [ 'mode', 'paste' ],
-        \            [ 'gitbranch', 'readonly', 'modified' ]
-        \   ],
-		\ },
-		\ 'colorscheme': 'nord',
-		\ 'component': { 'lineinfo': ' %3l:%-2v' },
-		\ 'component_expand': { 'buffers': 'lightline#bufferline#buffers' },
-		\ 'component_function': { 'readonly': 'LightlineReadonly', 'gitbranch': 'LightlineFugitiveHead' },
-		\ 'component_type': { 'buffers': 'tabsel' },
-		\ 'separator': { 'left': '', 'right': '' },
-		\ 'subseparator': { 'left': '', 'right': '' },
-		\ 'tabline': { 'left': [['buffers']], 'right': [['close']] }
-		\ }
-	function! LightlineReadonly()
-		return &readonly ? '' : ''
-	endfunction
-	function! LightlineFugitiveHead()
-		if exists('*FugitiveHead')
-			let branch = FugitiveHead()
-			return branch !=# '' ? ''.branch : ''
-		endif
-		return ''
-	endfunction
-Plug 'mengelbrecht/lightline-bufferline'
-    let g:lightline#bufferline#filename_modifier = ':t'
-    nmap <Leader>1 <Plug>lightline#bufferline#go(1)
-    nmap <Leader>2 <Plug>lightline#bufferline#go(2)
-    nmap <Leader>3 <Plug>lightline#bufferline#go(3)
-    nmap <Leader>4 <Plug>lightline#bufferline#go(4)
-    nmap <Leader>5 <Plug>lightline#bufferline#go(5)
-    nmap <Leader>6 <Plug>lightline#bufferline#go(6)
-    nmap <Leader>7 <Plug>lightline#bufferline#go(7)
-    nmap <Leader>8 <Plug>lightline#bufferline#go(8)
-    nmap <Leader>9 <Plug>lightline#bufferline#go(9)
-Plug 'airblade/vim-gitgutter', {'branch': 'main'}
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'posva/vim-vue'
-Plug 'wellle/targets.vim', { 'tag': 'v0.5.0' }
 Plug 'SirVer/ultisnips', { 'tag': '3.2' }
     let g:UltiSnipsSnippetDirectories = ['ultisnippets']
     let g:UltiSnipsExpandTrigger='<tab>'
