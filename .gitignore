@@ -1,2 +1,3 @@
 nvim/.config/nvim/plugged
 vifm/.config/vifm/vifminfo.json
+lazygit/.config/lazygit/github_pull_requests.json
