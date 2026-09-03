@@ -46,7 +46,7 @@ nmap g, <Action>(JumpToNextChange)
 
 " Find more examples here: https://jb.gg/share-ideavimrc
 
-map <leader>br :NERDTreeFind<cr>
+map <leader>be :NERDTreeFind<cr>
 
 map ]b <Action>(NextTab)
 map [b <Action>(PreviousTab)

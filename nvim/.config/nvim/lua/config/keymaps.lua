@@ -25,3 +25,7 @@ map({ "n", "x" }, "<leader>y", '"+y', { desc = "Yank to Clipboard" })
 map("x", "<leader>d", '"+d', { desc = "Delete to Clipboard" })
 map({ "n", "x" }, "<leader>p", '"+p', { desc = "Paste from Clipboard" })
 map({ "n", "x" }, "<leader>P", '"+P', { desc = "Paste from Clipboard (before)" })
+
+vim.keymap.set("n", "<leader>be", function()
+  Snacks.explorer.reveal({ focus = true })
+end, { desc = "Reveal current buffer in Snacks Explorer" })
