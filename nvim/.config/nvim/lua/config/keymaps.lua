@@ -26,6 +26,12 @@ map("x", "<leader>d", '"+d', { desc = "Delete to Clipboard" })
 map({ "n", "x" }, "<leader>p", '"+p', { desc = "Paste from Clipboard" })
 map({ "n", "x" }, "<leader>P", '"+P', { desc = "Paste from Clipboard (before)" })
 
+map("n", "<leader>fy", function()
+  local relpath = vim.fs.relpath(LazyVim.root.get(), vim.api.nvim_buf_get_name(0)) or vim.fn.expand("%:.")
+  vim.fn.setreg("+", relpath)
+  vim.notify("Yanked root-relative path: " .. relpath)
+end, { desc = "Yank Buffer Path from Root Dir" })
+
 vim.keymap.set("n", "<leader>be", function()
   local explorer = Snacks.explorer.reveal()
   if explorer then
