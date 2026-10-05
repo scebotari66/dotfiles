@@ -62,7 +62,7 @@ map ]t <Action>(PrevSplitter)
 map <leader>x <Action>(CloseContent)
 map <leader>X <Action>(ReopenClosedTab)
 
-map <leader>bd <Action>(CloseAllEditorsButActive)
+map <leader>bo <Action>(CloseAllEditorsButActive)
 map <leader>b> <Action>(CloseAllToTheRight)
 map <leader>b< <Action>(CloseAllToTheLeft)
 
