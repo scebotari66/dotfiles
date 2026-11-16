@@ -20,6 +20,9 @@ RPROMPT='[%F{yellow}%?%f]'
 [ -f ~/.aliases ] && source ~/.aliases
 [ -f ~/.functions ] && source ~/.functions
 
+# Name herdr tabs after the running command (no-op outside herdr)
+[ -f ~/.config/herdr/plugins/tab-name/hook.zsh ] && source ~/.config/herdr/plugins/tab-name/hook.zsh
+
 # fzf shell integration (Ctrl+T, Ctrl+R, Alt+C + completion)
 command -v fzf >/dev/null && source <(fzf --zsh)
 
