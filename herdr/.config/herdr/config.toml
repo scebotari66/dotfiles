@@ -4,6 +4,11 @@ onboarding = false
 name = "catppuccin"
 auto_switch = false
 
+# catppuccin's default navigate-mode cursor (selection_bg) is invisible in my
+# terminal, so j/k in prefix+w showed no highlight. Override with a visible color.
+[theme.custom]
+selection_bg = "#585b70" # catppuccin surface2
+
 [keys]
 prefix = "ctrl+space"
 
