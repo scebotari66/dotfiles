@@ -23,6 +23,7 @@ alias sa="sencha"
 alias t="tmux"
 alias v="nvim"
 alias w='(){ webstorm "${1:-.}" }'
+alias x="exit"
 alias y="yarn"
 alias yt="yt-dlp"
 alias ytmp3="yt-dlp --extract-audio --audio-format mp3"
