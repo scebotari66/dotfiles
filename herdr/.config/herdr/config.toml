@@ -20,8 +20,9 @@ settings = "prefix+shift+s"
 detach = "prefix+d"
 # reload_config = "prefix+shift+r"
 # open_notification_target = "prefix+o"
-# migrated from tmux: prefix+s = choose-tree (session list)
-workspace_picker = "prefix+s"
+# Built-in picker (no preview). prefix+s now opens the fzf picker with a
+# live preview, see the workspace-preview.sh keys.command below.
+workspace_picker = "prefix+w"
 # goto = "prefix+g"
 # new_workspace = "prefix+shift+n"
 # new_worktree = "prefix+shift+g"
@@ -86,18 +87,28 @@ navigate_workspace_down = "j"
 # type = "pane"
 # command = "lazygit"
 
+# migrated from tmux: prefix+s = choose-tree (session list), including its
+# preview of the highlighted session. j/k move, enter switches, esc/q cancels.
+[[keys.command]]
+key = "prefix+s"
+type = "popup"
+command = "~/.config/herdr/scripts/workspace-preview.sh"
+width = "90%"
+height = "85%"
+description = "workspace picker with preview"
+
 # Reorder the focused worktree within its repo group in the sidebar (the
 # sidebar can only drag top-level spaces; herdrdev/herdr discussion #5992).
 [[keys.command]]
 key = "prefix+shift+k"
 type = "shell"
-command = "/Users/serghei.cebotari/.config/herdr/scripts/move-worktree.sh up"
+command = "~/.config/herdr/scripts/move-worktree.sh up"
 description = "move worktree up"
 
 [[keys.command]]
 key = "prefix+shift+j"
 type = "shell"
-command = "/Users/serghei.cebotari/.config/herdr/scripts/move-worktree.sh down"
+command = "~/.config/herdr/scripts/move-worktree.sh down"
 description = "move worktree down"
 
 # Legacy indexed shortcut config is still parsed for compatibility.
