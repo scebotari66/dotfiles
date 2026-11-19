@@ -46,10 +46,8 @@ move_tab_next = "prefix+}"
 # next_tab = "prefix+n"
 # switch_tab = "prefix+1..9"
 # switch_workspace = ""   # optional indexed binding, e.g. "prefix+shift+1..9"
-# unset: rarely kill whole tabs, mostly just kill panes (prefix+x).
-# Note: "" explicitly unbinds; removing the line would revert to the default
-# prefix+shift+x, which collides with close_workspace above.
-close_tab = ""
+# migrated from tmux: bind & kill-window (default prefix+shift+x collides with close_workspace)
+close_tab = "prefix+&"
 # rename_pane = "prefix+shift+p"
 # edit_scrollback = "prefix+e"
 # migrated from tmux: bind j/k/h/l select-pane -D/-U/-L/-R (already herdr's defaults)
