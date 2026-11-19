@@ -10,6 +10,7 @@ alias -- -="cd -"
 #SHORTCUTS
 alias b="brew"
 alias cc="claude"
+alias ccc="CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1 claude"
 alias d="docker"
 alias dc="docker compose"
 alias f="vifm"
