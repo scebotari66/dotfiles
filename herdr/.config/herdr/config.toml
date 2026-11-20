@@ -176,7 +176,7 @@ agent_panel_sort = "spaces"
 
 # Agent status indicators: "dots" is color-only; "symbols" uses distinct static
 # glyphs for blocked, working, done, idle, and unknown states.
-status_indicators = "symbols"
+status_indicators = "dots"
 
 [ui.toast.herdr]
 position = "bottom-right"
