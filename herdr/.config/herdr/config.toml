@@ -190,6 +190,14 @@ agent_panel_sort = "spaces"
 # glyphs for blocked, working, done, idle, and unknown states.
 status_indicators = "dots"
 
+# herdr has no timer for plugins or hooks, so this command entry doubles as
+# one: every 2 minutes the server runs the sweep, which tags workspaces whose
+# remote branch was deleted (merged PR) as "done" (see [ui.sidebar.spaces]).
+# It prints nothing, so nothing shows in the tab bar.
+tab_bar_right = [
+  { type = "command", command = "~/.config/herdr/scripts/session-tag.sh sweep", interval_seconds = 120, timeout_seconds = 90 },
+]
+
 [ui.toast.herdr]
 position = "bottom-right"
 
