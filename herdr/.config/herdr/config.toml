@@ -85,6 +85,18 @@ navigate_workspace_down = "j"
 # type = "pane"
 # command = "lazygit"
 
+# Picks a tag icon shown next to the session name in the sidebar (see
+# [ui.sidebar.spaces] below) from a popup; scripts/session-tag.sh holds the
+# state table. Reported as workspace metadata (`herdr workspace
+# report-metadata`), so it never touches the session's actual label/name.
+[[keys.command]]
+key = "prefix+t"
+type = "popup"
+command = "~/.config/herdr/scripts/session-tag.sh"
+width = 56
+height = 11
+description = "pick session sidebar color tag"
+
 # migrated from tmux: prefix+s = choose-tree (session list), including its
 # preview of the highlighted session. j/k move, enter switches, esc/q cancels.
 [[keys.command]]
@@ -187,6 +199,27 @@ enabled = true
 # Play sounds when agents change state in background workspaces
 [ui.sound]
 enabled = true
+
+# Renders the "tag" workspace metadata token set by prefix+t (see
+# keys.command above) next to the session name. The token is the state's
+# nerd font glyph; these rules color it. Keep in sync with the state table in
+# scripts/session-tag.sh. Color = who the ball is with: blue active, peach
+# needs me, red stuck, yellow waiting on others, mauve someone else's work,
+# green done, grey parked. No token (state "none") renders nothing.
+[ui.sidebar.spaces]
+rows = [
+  ["state_icon", { token = "$tag", rules = [
+    { equals = "\uf0c3", fg = "#89b4fa" }, # wip: flask, blue
+    { equals = "\uf06d", fg = "#fab387" }, # urgent: fire, peach
+    { equals = "\uf407", fg = "#f9e2af" }, # pr-open: git-pull-request, yellow
+    { equals = "\uf086", fg = "#fab387" }, # changes: comments, peach
+    { equals = "\uf06e", fg = "#cba6f7" }, # reviewing: eye, mauve
+    { equals = "\uf05e", fg = "#f38ba8" }, # blocked: ban, red
+    { equals = "\uf04c", fg = "#6c7086" }, # hold: pause, grey
+    { equals = "\uf00c", fg = "#a6e3a1" }, # done: check, green
+  ] }, "workspace"],
+  ["branch", "git_status"],
+]
 
 [session]
 resume_agents_on_restore = true
